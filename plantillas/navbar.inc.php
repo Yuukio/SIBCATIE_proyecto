@@ -14,7 +14,7 @@ Conexion::cerrar_conexion();
                 Menu
                 <i class="fa fa-bars"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive" style="text-align">
+            <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ml-auto">
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="dashboard/paginas/administracion.php">Administracion</a>
@@ -23,16 +23,19 @@ Conexion::cerrar_conexion();
                         <a class="nav-link js-scroll-trigger" href="#page-top">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#">Buscar Especies</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#nosotros">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#portafolio">Especies</a>
+                        <a class="nav-link js-scroll-trigger" href="#buscar">Buscar Especies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#portfolio">Semana</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#galeria">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#equipo">Equipo</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#contact">Contacto</a>
@@ -49,7 +52,7 @@ Conexion::cerrar_conexion();
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#pricing">INICIAR SESIÓN</a>
                     </li>
-                    
+
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#" style="padding-top: 20px;">REGISTRARSE</a>
                     </li>
