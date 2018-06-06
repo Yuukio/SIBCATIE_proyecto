@@ -39,8 +39,7 @@ include_once 'plantillas/navbar.inc.php';
             <div class="col-md-12" style="text-align: center;" >
                 <hr class="my-4">
                 <p style="font-weight: bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-                <br><button class="btn-home sombra">Seguir leyendo</button>
+                <br><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#buscar">Seguir leyendo</a>
             </div>
         </div>
     </div>
@@ -70,6 +69,9 @@ include_once 'plantillas/navbar.inc.php';
                                 <br>Especies</h4>
                         </div>
                         <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="subheading">Flora Nativa</h4>
+                            </div>
                             <div class="timeline-body">
                                 <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
                             </div>
@@ -116,7 +118,7 @@ include_once 'plantillas/navbar.inc.php';
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4 class="subheading">Cultivos</h4>
+                                <h4 class="subheading">Cultivos Alimenticios</h4>
                             </div>
                             <div class="timeline-body">
                                 <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
@@ -394,22 +396,22 @@ include_once 'plantillas/navbar.inc.php';
         <div class="row">
             <div class="col-md-3 col-sm-6">
                 <a href="#">
-                    <img class="img-fluid d-block mx-auto" src="img/logos/envato.jpg" alt="">
+                    <img class="img-fluid d-block mx-auto" src="img/logos/Netbeans.png" alt="">
                 </a>
             </div>
             <div class="col-md-3 col-sm-6">
                 <a href="#">
-                    <img class="img-fluid d-block mx-auto" src="img/logos/designmodo.jpg" alt="">
+                    <img class="img-fluid d-block mx-auto" src="img/logos/git.png" alt="">
                 </a>
             </div>
             <div class="col-md-3 col-sm-6">
                 <a href="#">
-                    <img class="img-fluid d-block mx-auto" src="img/logos/themeforest.jpg" alt="">
+                    <img class="img-fluid d-block mx-auto" src="img/logos/illustrator.png" alt="">
                 </a>
             </div>
             <div class="col-md-3 col-sm-6">
                 <a href="#">
-                    <img class="img-fluid d-block mx-auto" src="img/logos/creative-market.jpg" alt="">
+                    <img class="img-fluid d-block mx-auto" src="img/logos/mysql.png" alt="">
                 </a>
             </div>
         </div>
