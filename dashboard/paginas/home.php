@@ -73,7 +73,7 @@
                         <!--Especies no identificadas-->
                         <div class="card">
                             <div class="header">
-                                <h2>ESPECIES NO IDENTIFICADAS</h2>
+                                <h2>REGISTRO DE ESPECIES</h2>
                                 <ul class="header-dropdown m-r--5">
                                     <li class="dropdown">
                                         <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -421,7 +421,7 @@
                         <!--Registro de actividad-->
                         <div class="card">
                             <div class="header">
-                                <h2>REGISTRO DE ACTIVIDAD</h2>
+                                <h2>ESPECIES NO IDENTIFICADAS</h2>
                                 <ul class="header-dropdown m-r--5">
                                     <li class="dropdown">
                                         <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -1117,7 +1117,7 @@
                         <!--Especies no identificadas-->
                         <div class="card">
                             <div class="header">
-                                <h2>ESPECIES NO IDENTIFICADAS</h2>
+                                <h2>USUARIOS ADMINISTRADORES</h2>
                                 <ul class="header-dropdown m-r--5">
                                     <li class="dropdown">
                                         <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
