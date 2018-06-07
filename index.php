@@ -166,11 +166,11 @@ include_once 'plantillas/navbar.inc.php';
                             <i class="fa fa-plus fa-3x"></i>
                         </div>
                     </div>
-                    <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+                    <img class="img-fluid dimension_img" src="img/galeria-home/semana/bromelia_pinguin.jpg" alt="">
                 </a>
                 <div class="portfolio-caption">
-                    <h4>Threads</h4>
-                    <p class="text-muted">Illustration</p>
+                    <h4>Chascaria</h4>
+                    <p class="text-muted">Bromelia Pinguin</p>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 portfolio-item">
@@ -180,11 +180,11 @@ include_once 'plantillas/navbar.inc.php';
                             <i class="fa fa-plus fa-3x"></i>
                         </div>
                     </div>
-                    <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
+                    <img class="img-fluid dimension_img" src="img/galeria-home/semana/zygia_longifolia.jpg" alt="">
                 </a>
                 <div class="portfolio-caption">
-                    <h4>Explore</h4>
-                    <p class="text-muted">Graphic Design</p>
+                    <h4>Quinina Australiana</h4>
+                    <p class="text-muted">Zygia Longifolia</p>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 portfolio-item">
@@ -194,11 +194,11 @@ include_once 'plantillas/navbar.inc.php';
                             <i class="fa fa-plus fa-3x"></i>
                         </div>
                     </div>
-                    <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
+                    <img class="img-fluid" src="img/galeria-home/semana/iresine_diffusa.jpg" alt="">
                 </a>
                 <div class="portfolio-caption">
-                    <h4>Finish</h4>
-                    <p class="text-muted">Identity</p>
+                    <h4>Nuez de Areca</h4>
+                    <p class="text-muted">Iresine Diffusa</p>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 portfolio-item">
@@ -208,11 +208,11 @@ include_once 'plantillas/navbar.inc.php';
                             <i class="fa fa-plus fa-3x"></i>
                         </div>
                     </div>
-                    <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
+                    <img class="img-fluid dimension_img" src="img/galeria-home/semana/achyranthes_aspera.jpg" alt="">
                 </a>
                 <div class="portfolio-caption">
-                    <h4>Lines</h4>
-                    <p class="text-muted">Branding</p>
+                    <h4>Peach Palm</h4>
+                    <p class="text-muted">Achyranthes Aspera</p>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 portfolio-item">
@@ -222,11 +222,11 @@ include_once 'plantillas/navbar.inc.php';
                             <i class="fa fa-plus fa-3x"></i>
                         </div>
                     </div>
-                    <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
+                    <img class="img-fluid dimension_img" src="img/galeria-home/semana/peperomia_rotundifolia.jpg" alt="">
                 </a>
                 <div class="portfolio-caption">
-                    <h4>Southwest</h4>
-                    <p class="text-muted">Website Design</p>
+                    <h4>Chontaduro</h4>
+                    <p class="text-muted">Peperomia Rotundifolia</p>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 portfolio-item">
@@ -236,11 +236,11 @@ include_once 'plantillas/navbar.inc.php';
                             <i class="fa fa-plus fa-3x"></i>
                         </div>
                     </div>
-                    <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
+                    <img class="img-fluid dimension_img" src="img/galeria-home/semana/strelitzia_nicolai.JPG" alt="">
                 </a>
                 <div class="portfolio-caption">
-                    <h4>Window</h4>
-                    <p class="text-muted">Photography</p>
+                    <h4>Bambú</h4>
+                    <p class="text-muted">Strelitzia Nicolai</p>
                 </div>
             </div>
         </div>

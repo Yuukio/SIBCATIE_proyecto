@@ -17,7 +17,7 @@ Conexion::cerrar_conexion();
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="dashboard/paginas/administracion.php">Administracion</a>
+                        <a class="nav-link js-scroll-trigger" href="dashboard/paginas/home.php">Administracion</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#page-top">Home</a>

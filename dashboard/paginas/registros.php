@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
     <?php
-    $titulo = 'Administración';
-    include_once '../../plantillas/head-dashboard.php';
+    $titulo = 'Registros';
+    include_once '../plantillas/head-dashboard.php';
 
     $opciones = '<a href="#" style="color: #1ABB24">
                     <i class="material-icons">search</i>
@@ -18,78 +18,25 @@
                 </a>';
     ?>
 
-    <!-- JQuery DataTable Css -->
-    <link href="../plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet">
-    <link href="../../css/dashboard.css" rel="stylesheet">
-
     <body class="theme-red">
 
         <?php
-        $administrador = "active";
+        $registros = "active";
         //------ Cargar Pantalla ------
-        include_once '../../plantillas/cargar-pantalla.php';
+        include_once '../plantillas/cargar-pantalla.php';
         //------ FINAL Cargar Pantalla ------
         //------ Barra superior ------
-        include_once '../../plantillas/barra-superior.php';
+        include_once '../plantillas/barra-superior.php';
         // ------ FINAL - Barra ruperior ------
         // ------ Menu lateral ------
-        include_once '../../plantillas/menu-lateral.php';
+        include_once '../plantillas/menu-lateral.php';
         // ------ Final - Menu lateral ------
         ?>
 
         <!-- Centro del Contenido-->
         <section class="content">
-
             <!-- Contadores -->
             <div class="container-fluid">
-                <div class="row clearfix">
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="info-box hover-zoom-effect">
-                            <div class="icon bg-verde">
-                                <i class="material-icons">speaker_notes</i>
-                            </div>
-                            <div class="content">
-                                <div class="text">ESPECIES IDENTIFICADAS</div>
-                                <div class="number">1500</div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="info-box hover-zoom-effect">
-                            <div class="icon bg-verde">
-                                <i class="material-icons">speaker_notes_off</i>
-                            </div>
-                            <div class="content">
-                                <div class="text">ESPECIES NO IDENTIFICADAS</div>
-                                <div class="number">45</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="info-box hover-zoom-effect">
-                            <div class="icon bg-verde">
-                                <i class="material-icons">folder_shared</i>
-                            </div>
-                            <div class="content">
-                                <div class="text">USUARIOS REGISTRADOS</div>
-                                <div class="number">75</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="info-box hover-zoom-effect">
-                            <div class="icon bg-verde">
-                                <i class="material-icons">work</i>
-                            </div>
-                            <div class="content">
-                                <div class="text">CANTIDAD DE ADMINISTRADORES</div>
-                                <div class="number">20</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- FINAL - Contadores -->
                 <!-- Basic Examples -->
                 <div class="row clearfix">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -789,22 +736,5 @@
         <!-- #FINAL# Centro del Contenido-->
 
         <?php
-        include_once '../../plantillas/dashboard-scripts.php';
+        include_once '../plantillas/dashboard-scripts.php';
         ?>
-
-        <!-- Jquery DataTable Plugin Js -->
-        <script src="../plugins/jquery-datatable/jquery.dataTables.js"></script>
-        <script src="../plugins/jquery-datatable/skin/bootstrap/js/dataTables.bootstrap.js"></script>
-        <script src="../plugins/jquery-datatable/extensions/export/dataTables.buttons.min.js"></script>
-        <script src="../plugins/jquery-datatable/extensions/export/buttons.flash.min.js"></script>
-        <script src="../plugins/jquery-datatable/extensions/export/jszip.min.js"></script>
-        <script src="../plugins/jquery-datatable/extensions/export/pdfmake.min.js"></script>
-        <script src="../plugins/jquery-datatable/extensions/export/vfs_fonts.js"></script>
-        <script src="../plugins/jquery-datatable/extensions/export/buttons.html5.min.js"></script>
-        <script src="../plugins/jquery-datatable/extensions/export/buttons.print.min.js"></script>
-        <!-- Custom Js -->
-        <script src="../js/pages/tables/jquery-datatable.js"></script>
-
-    </body>
-
-</html>
