@@ -25,51 +25,42 @@
         <section class="content">
             <div class="container-fluid">
                 <div class="row clearfix">
-                    <div class="col-md-3">
-                        <div class="info-box hover-zoom-effect">
-                            <div class="icon bg-verde">
-                                <i class="material-icons">speaker_notes</i>
+                    <div class="col-md-3" style="height: 21em;">
+                        <div class="datos col-md-12">
+                            <div class="cuadros info-box hover-zoom-effect">
+                                <div class="icon bg-verde">
+                                    <i class="material-icons">speaker_notes</i>
+                                </div>
+                                <div class="content">
+                                    <div class="text">ESPECIES IDENTIFICADAS</div>
+                                    <div class="number">1500</div>
+                                </div>
                             </div>
-                            <div class="content">
-                                <div class="text">ESPECIES IDENTIFICADAS</div>
-                                <div class="number">1500</div>
+                        </div>
+                        <div class="datos col-md-12">
+                            <div class="cuadros info-box hover-zoom-effect">
+                                <div class="icon bg-verde">
+                                    <i class="material-icons">speaker_notes_off</i>
+                                </div>
+                                <div class="content">
+                                    <div class="text">ESPECIES NO IDENTIFICADAS</div>
+                                    <div class="number">45</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="datos col-md-12">
+                            <div class="cuadros info-box hover-zoom-effect">
+                                <div class="icon bg-verde">
+                                    <i class="material-icons">folder_shared</i>
+                                </div>
+                                <div class="content">
+                                    <div class="text">USUARIOS REGISTRADOS</div>
+                                    <div class="number">75</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="info-box hover-zoom-effect">
-                            <div class="icon bg-verde">
-                                <i class="material-icons">speaker_notes_off</i>
-                            </div>
-                            <div class="content">
-                                <div class="text">ESPECIES NO IDENTIFICADAS</div>
-                                <div class="number">45</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="info-box hover-zoom-effect">
-                            <div class="icon bg-verde">
-                                <i class="material-icons">folder_shared</i>
-                            </div>
-                            <div class="content">
-                                <div class="text">USUARIOS REGISTRADOS</div>
-                                <div class="number">75</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="info-box hover-zoom-effect">
-                            <div class="icon bg-verde">
-                                <i class="material-icons">work</i>
-                            </div>
-                            <div class="content">
-                                <div class="text">CANTIDAD DE ADMINISTRADORES</div>
-                                <div class="number">20</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-7">
+                    <div class="col-md-4">
                         <!--Especies no identificadas-->
                         <div class="card">
                             <div class="header">
@@ -88,10 +79,10 @@
                                 </ul>
                             </div>
                             <div>
-                                <div class="scrollable-area2">
+                                <div class="scrollable-area">
                                     <div class="row">
                                         <div class="table-responsive">
-                                            <table class="table table2 table-bordered table-striped table-hover js-basic-example">
+                                            <table class="table table table-bordered table-striped table-hover">
                                                 <thead>
                                                     <tr style="background: white">
                                                         <th>
@@ -436,10 +427,10 @@
                                 </ul>
                             </div>
                             <div>
-                                <div class="scrollable-area1">
+                                <div class="scrollable-area">
                                     <div class="row">
                                         <div class="table-responsive">
-                                            <table class="table table1 table-bordered table-striped table-hover table-dark">
+                                            <table class="table table table-bordered table-striped table-hover table-dark">
                                                 <thead>
                                                     <tr style="background: white">
                                                         <th>
@@ -765,7 +756,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-6">
                         <!--Registro de actividad-->
                         <div class="card">
                             <div class="header">
@@ -784,10 +775,10 @@
                                 </ul>
                             </div>
                             <div>
-                                <div class="scrollable-area3">
+                                <div class="scrollable-area">
                                     <div class="row">
                                         <div class="table-responsive">
-                                            <table class="table table3 table-bordered table-striped table-hover table-dark">
+                                            <table class="table table table-bordered table-striped table-hover">
                                                 <thead>
                                                     <tr style="background: white">
                                                         <th>
@@ -1113,7 +1104,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-7">
+                    <div class="col-md-6">
                         <!--Especies no identificadas-->
                         <div class="card">
                             <div class="header">
@@ -1132,10 +1123,10 @@
                                 </ul>
                             </div>
                             <div>
-                                <div class="scrollable-area4">
+                                <div class="scrollable-area">
                                     <div class="row">
                                         <div class="table-responsive">
-                                            <table class="table table4 table-bordered table-striped table-hover js-basic-example">
+                                            <table class="table table-bordered table-striped table-hover">
                                                 <thead>
                                                     <tr style="background-color: white">
                                                         <th>

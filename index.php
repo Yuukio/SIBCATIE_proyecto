@@ -13,47 +13,22 @@ include_once 'plantillas/navbar.inc.php';
     <div class="col-md-6">
         <div class="container-fluid" style="text-align:right; padding-right: 200px" >
             <div class="intro-text">
-                <div class="intro-lead-in">Sistema de Informacion<br>Botanico del CATIE</div>
+                <div class="intro-lead-in">Sistema de Información<br>Botánico del CATIE</div>
                 <div class="intro-heading text-uppercase">SIBCATIE</div>
-                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Nuestras especies</a>
+                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Buscar Especie</a>
             </div>
         </div>
     </div>
 </header>
-
-<!-- SOBRE NOSOTROS -->
-<section id="nosotros" class="bg-grey">
-    <div class="container" >
-        <div class="row">
-            <div class="col-md-12" style="text-align: center">
-                <h2 class="section-heading text-uppercase">SOBRE NOSOTROS</h2>
-                <hr class="my-4">
-                <h3 class="section-subheading text-muted">Conoce mejor nuestro centro botánico</h3>
-            </div>
-            <div class="col-md-6" style="text-align: right">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-            <div class="col-md-6" style="text-align: center">
-                <img class="img-fluid" src="img/jardin-botanico.jpg">
-            </div>
-            <div class="col-md-12" style="text-align: center;" >
-                <hr class="my-4">
-                <p style="font-weight: bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <br><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#buscar">Seguir leyendo</a>
-            </div>
-        </div>
-    </div>
-
-</section>
 
 <!-- BUSCAR ESPECIES -->
 <section id="buscar">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading text-uppercase">Buscar Especies</h2>
+                <h2 class="section-heading text-uppercase">Registro de Especies</h2>
                 <hr class="my-4">
-                <h3 class="section-subheading text-muted">Descubre todas nuestras especies ubicadas por zonas</h3>
+                <h3 class="section-subheading text-muted">Descubre todas nuestras especies ingresando en cualquier area de campo</h3>
             </div>
         </div>
         <div class="row" style="padding-top: 30px;">
@@ -125,23 +100,6 @@ include_once 'plantillas/navbar.inc.php';
                             </div>
                         </div>
                     </li>
-
-                    <!--*******
-
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="" style="cursor: pointer">
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>July 2014</h4>
-                                <h4 class="subheading">Phase Two Expansion</h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                            </div>
-                        </div>
-                    </li>-->
                 </ul>
             </div>
         </div>
@@ -258,33 +216,34 @@ include_once 'plantillas/navbar.inc.php';
         <div class="tz-gallery">
             <div class="row">
                 <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="img/galeria-home/bridge.jpg">
-                        <img src="img/galeria-home/bridge.jpg" alt="Bridge">
+                    <a class="lightbox" href="img/galeria-home/1.jpg">
+                        <img src="img/galeria-home/1.jpg" alt="Bridge">
+                        
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="img/galeria-home/park.jpg">
-                        <img src="img/galeria-home/park.jpg" alt="Park">
+                    <a class="lightbox" href="img/galeria-home/2.jpg">
+                        <img src="img/galeria-home/2.jpg" alt="Park">
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="img/galeria-home/tunnel.jpg">
-                        <img src="img/galeria-home/tunnel.jpg" alt="Tunnel">
+                    <a class="lightbox" href="img/galeria-home/3.jpg">
+                        <img src="img/galeria-home/3.jpg" alt="Tunnel">
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="img/galeria-home/traffic.jpg">
-                        <img src="img/galeria-home/traffic.jpg" alt="Traffic">
+                    <a class="lightbox" href="img/galeria-home/4.jpg">
+                        <img src="img/galeria-home/4.jpg" alt="Traffic">
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="img/galeria-home/coast.jpg">
-                        <img src="img/galeria-home/coast.jpg" alt="Coast">
+                    <a class="lightbox" href="img/galeria-home/5.jpg">
+                        <img src="img/galeria-home/5.jpg" alt="Coast">
                     </a>
                 </div> 
                 <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="img/galeria-home/rails.jpg">
-                        <img src="img/galeria-home/rails.jpg" alt="Rails">
+                    <a class="lightbox" href="img/galeria-home/6.jpg">
+                        <img src="img/galeria-home/6.jpg" alt="Rails">
                     </a>
                 </div>
 
@@ -298,7 +257,7 @@ include_once 'plantillas/navbar.inc.php';
     </script>
 </section>
 
-<!-- EQUIPO -->
+<!-- EQUIPO 
 <section class="bg-grey" id="equipo">
     <div class="container">
         <div class="row">
@@ -389,7 +348,32 @@ include_once 'plantillas/navbar.inc.php';
         </div>
     </div>
 </section>
+-->
 
+<!-- SOBRE NOSOTROS -->
+<section id="nosotros" class="bg-grey">
+    <div class="container" >
+        <div class="row">
+            <div class="col-md-12" style="text-align: center">
+                <h2 class="section-heading text-uppercase">SOBRE NOSOTROS</h2>
+                <hr class="my-4">
+                <h3 class="section-subheading text-muted">Conoce mejor nuestro centro botánico</h3>
+            </div>
+            <div class="col-md-6" style="text-align: right">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="col-md-6" style="text-align: center">
+                <img class="img-fluid" src="img/jardin-botanico.jpg">
+            </div>
+            <div class="col-md-12" style="text-align: center;" >
+                <hr class="my-4">
+                <p style="font-weight: bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <br><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#buscar">Seguir leyendo</a>
+            </div>
+        </div>
+    </div>
+
+</section>
 <!-- Clients -->
 <section class="py-5">
     <div class="container">
@@ -468,8 +452,6 @@ include_once 'plantillas/navbar.inc.php';
     <!--<a class="nav-link js-scroll-trigger" href="#page-top" style="font-size: 50px;">^</a>-->
     <p>Copyright &copy; 2018 - SIBCATIE creado por <a href="https://www.catie.ac.cr/" title="Visit w3schools">www.catie.ac.cr</a></p>
 </footer>
-
-
 
 <!-- Portfolio Modals -->
 
