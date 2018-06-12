@@ -9,7 +9,9 @@ Conexion::cerrar_conexion();
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container-fluid">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top" style="font-family: gill Sans mt; font-weight: bold">SIBCATIE</a>
+            <a class="navbar-brand" href="index.php">
+                <img  src="img/sibcatie-logo.png">
+            </a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fa fa-bars"></i>
@@ -39,7 +41,7 @@ Conexion::cerrar_conexion();
                     </li>
                     <li style="padding-right: 60px"></li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#pricing">INICIAR SESIÓN</a>
+                        <a class="nav-link js-scroll-trigger" href="sesion.php">Iniciar sesión</a>
                     </li>
                 </ul>
             </div>

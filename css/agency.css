@@ -179,7 +179,7 @@ img::-moz-selection {
     #mainNav.navbar-shrink {
         padding-top: 0;
         padding-bottom: 0;
-        background-color: #212529;
+        background-color: #020202;
     }
     #mainNav.navbar-shrink .navbar-brand {
         font-size: 1.25em;
@@ -300,7 +300,7 @@ header.masthead .intro-text .intro-heading {
     margin: 0 auto;
     padding: 25px;
     text-align: center;
-    background-color: #f2f2f2;
+    background-color: #f8f9fa;
 }
 
 #portfolio .portfolio-item .portfolio-caption h4 {
@@ -751,8 +751,7 @@ espacio-derecho{
     align-items: center;
 }
 .sombra{
-
-    box-shadow: 2px 2px 10px #666;
+    box-shadow: 1px 1px 5px #666;
 
 }
 .franja{
@@ -781,4 +780,173 @@ espacio-derecho{
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+}
+
+.imagen-fondo{
+    background-color: rgba(255,255,255,0.8);
+    background-image: url(../img/fondo-accion.jpg);
+    height: 100%;
+    background-attachment: fixed;
+}
+
+/*Registro*/
+@media only screen and (min-width: 75rem){ 
+    .forms {
+        box-sizing: border-box;
+        display: flex;
+        margin: 0 auto;
+        padding: 2rem 3.125rem;
+        background: rgb(100%,100%,100%);
+        border: .1rem solid #c1c0c0;
+        box-shadow: 0 0.0625rem 0 0 #eae8e8;
+    }
+}
+.forms {
+    max-width: 75rem;
+}
+
+@media only screen and (min-width: 75rem){
+    .main-registro {
+        max-width: none;
+        background: #f2f2f2;
+    }
+}
+.main-registro {
+    margin: 0 auto;
+    max-width: 27rem;
+    padding: 1.5rem 1.275rem;
+    font-family: Helvetica,"Helvetica Nueue",Arial,sans-serif;
+    background: rgb(100%,100%,100%);
+}
+.main-registro {
+    padding: 2.25rem 0;
+    background: #f2f2f2;
+}
+.div-registro {
+    display: block;
+}
+
+/**************************/
+
+@media only screen and (min-width: 75rem){
+    .signup-form-section {
+        flex: 1 1 67.1%;
+        margin-right: 3.25rem;
+        order: 0;
+        padding-right: 3.25rem;
+        border-right: .0625rem solid #c1c0c0;
+    }
+}
+@media only screen and (min-width: 75rem){
+    .main-registro section+section {
+        margin-top: 0;
+        padding-top: 0;
+    }
+}
+.main-registro section+section {
+    margin-top: 4.5rem;
+    padding-top: 1.5rem;
+}
+.main-registro {
+    margin: 0 auto;
+    max-width: 27rem;
+    padding: 1.5rem 1.275rem;
+    font-family: Helvetica,"Helvetica Nueue",Arial,sans-serif;
+    background: rgb(100%,100%,100%);
+}
+.signup-form-section {
+    flex: 1 1 67.1%;
+    margin-right: 3.25rem;
+    order: 0;
+    padding-right: 3.25rem;
+    border-right: .0625rem solid #c1c0c0;
+}
+.isolated-page-header {
+    position: relative;
+    box-shadow: 0 0 0.5em rgba(0,0,0,.25);
+    overflow: hidden;
+    line-height: 1;
+    background-color: rgb(100%,100%,100%);
+}
+
+.navbar-sesion{
+
+    margin-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: #020202 !important;
+}
+
+.div-sesion{
+    box-sizing: border-box;
+    display: flex;
+    margin: 0 auto;
+    padding: 2rem 3.125rem;
+    background: rgb(100%,100%,100%);
+    border: .1rem solid #c1c0c0;
+    box-shadow: 0 0.0625rem 0 0 #eae8e8;
+    max-width: 75rem;
+}
+
+.div-registro{
+    flex: 1 1 67.1%;
+    margin-right: 3.25rem;
+    order: 0;
+    padding-right: 3.25rem;
+    border-right: .0625rem solid #c1c0c0;
+}
+
+.div-inicio{
+
+}
+
+.std-form input, .std-form select, .std-form textarea {
+    box-sizing: border-box;
+    height: 3.4em;
+    padding: .8em 1em;
+    width: 100%;
+    border: .1em solid #a5a2a2;
+    font-size: 1em;
+    line-height: 1.8;
+    background: rgb(100%,100%,100%);
+    transition: padding .1s ease-out,border-color .1s ease-out;
+}
+
+.std-form .radio-label {
+    flex: 0 1 auto;
+    margin-bottom: .65em;
+    margin-top: 0;
+}
+
+.col-all{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.std-form{
+    box-sizing: border-box;
+    height: 3.4em;
+    padding: .8em 1em;
+    width: 100%;
+    border: .1em solid #a5a2a2;
+    font-size: 1em;
+    line-height: 1.8;
+    background: rgb(100%,100%,100%);
+    transition: padding .1s ease-out,border-color .1s ease-out;
+}
+.regresar-home{
+    font-size: 90%;
+    font-weight: 400;
+    padding: 0.75em 0;
+    letter-spacing: 1px;
+    color: white;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.regresar-home:hover{
+    color: #4CAF50;
+    text-decoration: none;
 }

@@ -4,7 +4,7 @@ include_once 'app/RepositorioUsuario.inc.php';
 
 $titulo = 'SIBCATIE';
 
-include_once 'plantillas//documento-declaracion.inc.php';
+include_once 'plantillas/documento-declaracion.inc.php';
 include_once 'plantillas/navbar.inc.php';
 ?>
 
@@ -22,13 +22,13 @@ include_once 'plantillas/navbar.inc.php';
 </header>
 
 <!-- BUSCAR ESPECIES -->
-<section id="buscar">
+<section id="buscar" class="bg-light">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading text-uppercase">Registro de Especies</h2>
                 <hr class="my-4">
-                <h3 class="section-subheading text-muted">Descubre todas nuestras especies ingresando en cualquier area de campo</h3>
+                <h3 class="section-subheading text-muted">Descubre todas nuestras especies dando click en cualquier area de campo</h3>
             </div>
         </div>
         <div class="row" style="padding-top: 30px;">
@@ -106,12 +106,28 @@ include_once 'plantillas/navbar.inc.php';
     </div>
 </section>
 
+<section class="imagen-fondo">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8 centrar" style="text-align: center; height: 150px">
+                <h5 style="color: white">
+                    <span style="font-weight: bold">SIBCATIE esta lleno de ventajas al registrar una cuenta.</span><br>Hecho especialmente para estudiar 
+                    y aprender sobre botanica al lado de expertos en la materia.
+                </h5>
+            </div>
+            <div class="col-md-4 centrar" style="height: 150px">
+                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Registrar cuenta</a>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- SEMANA -->
-<section class="bg-grey" id="portfolio">
+<section class="bg-light" id="portfolio">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading text-uppercase">Semana</h2>
+                <h2 class="section-heading text-uppercase">ESPECIES DE LA SEMANA</h2>
                 <hr class="my-4">
                 <h3 class="section-subheading text-muted">Conoce nuestras especies de la semana</h3>
             </div>
@@ -206,10 +222,10 @@ include_once 'plantillas/navbar.inc.php';
 </section>
 
 <!-- GALERIA -->
-<section id="galeria" class="bg-light">
+<section id="galeria" class="bg-grey">
     <div class="container gallery-container">
         <div class="col-md-12" style="text-align: center; padding-right: 15px">
-            <h2 class="section-heading text-uppercase">GALERÍA</h2>
+            <h2 class="section-heading text-uppercase">GALERÍA DEL JARDÍN BOTÁNICO</h2>
             <hr class="my-4">
             <h3 class="section-subheading text-muted">Ven y disfruta en persona de nuestro jardín botánico del CATIE.</h3>
         </div>
@@ -218,7 +234,7 @@ include_once 'plantillas/navbar.inc.php';
                 <div class="col-sm-6 col-md-4">
                     <a class="lightbox" href="img/galeria-home/1.jpg">
                         <img src="img/galeria-home/1.jpg" alt="Bridge">
-                        
+
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-4">
@@ -351,7 +367,7 @@ include_once 'plantillas/navbar.inc.php';
 -->
 
 <!-- SOBRE NOSOTROS -->
-<section id="nosotros" class="bg-grey">
+<section id="nosotros" class="bg-light">
     <div class="container" >
         <div class="row">
             <div class="col-md-12" style="text-align: center">
@@ -366,8 +382,6 @@ include_once 'plantillas/navbar.inc.php';
                 <img class="img-fluid" src="img/jardin-botanico.jpg">
             </div>
             <div class="col-md-12" style="text-align: center;" >
-                <hr class="my-4">
-                <p style="font-weight: bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <br><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#buscar">Seguir leyendo</a>
             </div>
         </div>
@@ -375,7 +389,7 @@ include_once 'plantillas/navbar.inc.php';
 
 </section>
 <!-- Clients -->
-<section class="py-5">
+<section class="py-5 bg-grey">
     <div class="container">
         <div class="row">
             <div class="col-md-3 col-sm-6">
@@ -659,20 +673,6 @@ include_once 'plantillas/navbar.inc.php';
     </div>
 </div>
 
-<!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-<!-- Plugin JavaScript -->
-<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-<!-- Contact form JavaScript -->
-<script src="js/jqBootstrapValidation.js"></script>
-<script src="js/contact_me.js"></script>
-
-<!-- Custom scripts for this template -->
-<script src="js/agency.min.js"></script>
-
-</body>
-
-</html>
+<?php
+include_once './plantillas/documento-cierre.inc.php';
+?>
