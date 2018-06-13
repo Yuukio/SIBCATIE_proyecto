@@ -60,7 +60,7 @@ include_once 'plantillas/navbar.inc.php';
                             <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="" style="cursor: pointer">
                         </div>
                         <div class="timeline-panel">
-                            <div class="timeline-heading">
+                                <div class="timeline-heading">
                                 <h4 class="subheading">Cultivos</h4>
                             </div>
                             <div class="timeline-body">
@@ -464,7 +464,7 @@ include_once 'plantillas/navbar.inc.php';
 <!-- Footer -->
 <footer class="container-fluid text-center">
     <!--<a class="nav-link js-scroll-trigger" href="#page-top" style="font-size: 50px;">^</a>-->
-    <p>Copyright &copy; 2018 - SIBCATIE creado por <a href="https://www.catie.ac.cr/" title="Visit w3schools">www.catie.ac.cr</a></p>
+    <p>Copyright &copy; 2018 - SIBCATIE creado por <a href="https://www.catie.ac.cr/">www.catie.ac.cr</a></p>
 </footer>
 
 <!-- Portfolio Modals -->

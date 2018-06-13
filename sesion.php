@@ -36,52 +36,69 @@ Conexion::cerrar_conexion();
     </nav>
 
     <div class="container-fluid div-sesion sombra">
-        
         <!--registrar cuenta-->
         <div class="container-fluid div-registro">
-            <div class="col-md-12 col-all">
-                <h2>Registrar cuenta en SIBCATIE</h2>
-                <p class="subhead">¡Únete a Crunchyroll! ¡Se tarda un clic!</p>
+            <div class="row">
+                <div class="col-md-12 col-all">
+                    <h2>Registrar cuenta en SIBCATIE</h2>
+                    <p class="subhead">¡Únete a SIBCATIE y descubre tus ventajas!</p>
+                </div>
             </div>
-            <div class="col-md-6 col-all">
-                <p>
-                    <label for="signup_with_profile_email" class="required">
-                        <span class="label-text">Dirección de Correo Electrónico</span>
-                        <input class="std-form">
-                    </label>
-                </p>
+            <div class="row">
+                <div class="col-md-6 col-all">
+                    <p>
+                        <label for="signup_with_profile_email" class="required">
+                            <span class="label-text">Dirección de Correo Electrónico</span>
+                            <input class="std-form">
+                        </label>
+                    </p>
+                </div>
+                <div class="col-md-6 col-all">
+                    <p>
+                        <label for="signup_with_profile_username" class="required">
+                            <span class="label-text">Nombre de Usuario</span>
+                            <input class="std-form">
+                        </label>
+                    </p>
+                </div>
             </div>
-            <div class="col-md-6 col-all">
-                <p>
-                    <label for="signup_with_profile_username" class="required">
-                        <span class="label-text">Nombre de Usuario</span>
-                        <input class="std-form">
-                    </label>
-                </p>
+            <div class="row">
+                <div class="col-md-6 col-all">
+                    <p>
+                        <label for="signup_with_profile_password" class="required">
+                            <span class="label-text">Contrasena</span>
+                            <input class="std-form">
+                        </label>
+                    </p>
+                </div>
+                <div class="col-md-6 col-all">
+                    <p>
+                        <label for="signup_with_profile_password" class="required">
+                            <span class="label-text">Repetir contrasena</span>
+                            <input class="std-form">
+                        </label>
+                    </p>
+                </div>
             </div>
-            <div class="col-md-6 col-all">
-                <p>
-                    <label for="signup_with_profile_password" class="required">
-                        <span class="label-text">Contrasena</span>
-                        <input class="std-form">
-                    </label>
-                </p>
-            </div>
-            <div class="col-md-6 col-all">
-                <p>
-                    <label for="signup_with_profile_password" class="required">
-                        <span class="label-text">Repetir contrasena</span>
-                        <input class="std-form">
-                    </label>
-                </p>
-            </div>
-            <div class="col-md-12 col-all" style="text-align: center">
-                <button class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" type="submit">
-                    Crear una Cuenta
-                </button>
+            <div class="row">
+                <div class="col-md-12 col-all" style="text-align: center">
+                    <button class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" type="submit">
+                        Crear una Cuenta
+                    </button>
+                </div>
+                <div class="col-md-12" style="text-align: center; padding-top: 20px">
+                    <p>
+                        <small>
+                            Al hacer clic en "Registrarse", aceptas  
+                            <a href="#">Términos de Servicio</a> 
+                            y la 
+                            <a href="#">Política de Privacidad</a>.
+                        </small>
+                    </p>
+                </div>
             </div>
         </div>
-        
+
         <!--iniciar secion-->
         <div class="col-md-4">
             <div class="col-md-12 col-all">
@@ -99,18 +116,32 @@ Conexion::cerrar_conexion();
             <div class="col-md-12 col-all">
                 <p>
                     <label for="signup_with_profile_password" class="required">
-                        <span class="label-text">Contrasena</span>
+                        <span class="label-text">Contraseña</span>
                         <input class="std-form">
                     </label>
                 </p>
             </div>
             <div class="col-md-12 col-all" style="text-align: center">
                 <button class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" type="submit">
-                    Iniciar Sesion
+                    Iniciar Sesión
                 </button>
+            </div>
+            <div class="col-md-12" style="text-align: center; padding-top: 20px">
+                <p>
+                    <small>
+                        ¿Olvidaste tu contraña? Ingrese 
+                        <a href="#">aquí.</a>
+                    </small>
+                </p>
             </div>
         </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid text-center" style="padding-top: 100px">
+        <!--<a class="nav-link js-scroll-trigger" href="#page-top" style="font-size: 50px;">^</a>-->
+        <p>Copyright &copy; 2018 - SIBCATIE creado por <a href="https://www.catie.ac.cr/">www.catie.ac.cr</a></p>
+    </footer>
 
     <?php
     include_once './plantillas/documento-cierre.inc.php';
