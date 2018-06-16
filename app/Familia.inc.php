@@ -10,11 +10,11 @@ class Familia {
         $this->nombre_familia = $nombre_familia;
     }
 
-    public function get_IdFamilia() {
+    public function getIdFamilia() {
         return $this->idFamilia;
     }
 
-    public function get_NombreFamilia() {
+    public function getNombreFamilia() {
         return $this->nombre_familia;
     }
 

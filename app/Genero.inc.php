@@ -10,15 +10,15 @@ class Genero {
         $this->nombre_genero = $nombre_genero;
     }
 
-    public function get_IdGenero() {
+    public function getIdGenero() {
         return $this->idGenero;
     }
 
-    public function get_NombreGenero() {
+    public function getNombreGenero() {
         return $this->nombre_genero;
     }
 
-    public function set_NombreGenero($nombre_genero) {
+    public function setNombreGenero($nombre_genero) {
         $this->nombre_genero = $nombre_genero;
     }
 

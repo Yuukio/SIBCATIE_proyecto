@@ -14,8 +14,10 @@ class RepositorioGenero {
                 $sql = "INSERT INTO Genero(nombre_genero) VALUES(:nombre_genero)";
 
                 $sentencia = $conexion->prepare($sql);
+                
+                $nombre_genero = $genero -> getNombreGenero();
 
-                $sentencia -> bindParam(':nombre_genero', $genero -> get_NombreGenero(), PDO::PARAM_STR);
+                $sentencia -> bindParam(':nombre_genero', $nombre_genero, PDO::PARAM_STR);
 
                 $genero_insertado = $sentencia -> execute();
             } catch (PDOException $ex) {

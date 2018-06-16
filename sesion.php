@@ -1,16 +1,10 @@
 <?php
 include_once 'app/Conexion.inc.php';
-include_once 'app/Repositorios/RepositorioUsuario.inc.php';
+include_once 'app/RepositorioUsuario.inc.php';
 
 $titulo = 'SIBCATIE';
 
 include_once 'plantillas/documento-declaracion.inc.php';
-?>
-
-<?php
-Conexion::abrir_conexion();
-$total_usuarios = RepositorioUsuario::obtenerNumeroUsuarios(Conexion::obtener_conexion());
-Conexion::cerrar_conexion();
 ?>
 
 <body style="background: #f2f2f2;">

@@ -10,15 +10,15 @@ class Uso {
         $this->nombre_uso = $nombre_uso;
     }
 
-    public function get_IdUso() {
+    public function getIdUso() {
         return $this->idUso;
     }
 
-    public function get_NombreUso() {
+    public function getNombreUso() {
         return $this->nombre_uso;
     }
 
-    public function set_NombreUso($nombre_uso) {
+    public function setNombreUso($nombre_uso) {
         $this->nombre_uso = $nombre_uso;
     }
 

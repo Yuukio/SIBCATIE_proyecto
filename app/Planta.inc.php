@@ -43,103 +43,103 @@ class Planta {
         $this->identificada = $identificada;
     }
 
-    public function get_IdPlanta() {
+    public function getIdPlanta() {
         return $this->idPlanta;
     }
 
-    public function get_NombreComun() {
+    public function getNombreComun() {
         return $this->nombre_comun;
     }
 
-    public function get_FechaIngreso() {
+    public function getFechaIngreso() {
         return $this->fecha_ingreso;
     }
 
-    public function get_Autor() {
+    public function getAutor() {
         return $this->autor;
     }
 
-    public function get_Altura() {
+    public function getAltura() {
         return $this->altura;
     }
 
-    public function get_Reproduccion() {
+    public function getReproduccion() {
         return $this->reproduccion;
     }
 
-    public function get_Visible() {
+    public function getVisible() {
         return $this->visible;
     }
 
-    public function get_Forma_IdForma() {
+    public function getForma_IdForma() {
         return $this->Forma_idForma;
     }
 
-    public function get_Color_idColor() {
+    public function getColor_idColor() {
         return $this->Color_idColor;
     }
 
-    public function get_TipoHoja_idTipoHoja() {
+    public function getTipoHoja_idTipoHoja() {
         return $this->TipoHoja_idTipoHoja;
     }
 
-    public function get_Continente_idContinente() {
+    public function getContinente_idContinente() {
         return $this->Continente_idContinente;
     }
 
-    public function get_ZonaCardinal_idZonaCardinal() {
+    public function getZonaCardinal_idZonaCardinal() {
         return $this->ZonaCardinal_idZonaCardinal;
     }
 
-    public function get_Familia_idFamilia() {
+    public function getFamilia_idFamilia() {
         return $this->Familia_idFamilia;
     }
 
-    public function get_DeterminadaPor_idDeterminadaPor() {
+    public function getDeterminadaPor_idDeterminadaPor() {
         return $this->DeterminadaPor_idDeterminadaPor;
     }
 
-    public function get_Genero_idGenero() {
+    public function getGenero_idGenero() {
         return $this->Genero_idGenero;
     }
 
-    public function get_Epiteto_idEpiteto() {
+    public function getEpiteto_idEpiteto() {
         return $this->Epiteto_idEpiteto;
     }
 
-    public function get_Revision(){
+    public function getRevision(){
         return $this->revision;
     }
 
-    public function get_Identificada(){
+    public function getIdentificada(){
         return $this->identificada;
     }
 
-    public function set_NombreComun($nombre_comun) {
+    public function setNombreComun($nombre_comun) {
         $this->nombre_comun = $nombre_comun;
     }
 
-    public function set_Autor($autor) {
+    public function setAutor($autor) {
         $this->autor = $autor;
     }
 
-    public function set_Altura($altura) {
+    public function setAltura($altura) {
         $this->altura = $altura;
     }
 
-    public function set_Reproduccion($reproduccion) {
+    public function setReproduccion($reproduccion) {
         $this->reproduccion = $reproduccion;
     }
 
-    public function set_Revision($revision) {
+    public function setRevision($revision) {
         $this->revision = $revision;
     }
 
-    public function set_Visible($visible) {
+    public function setVisible($visible) {
         $this->visible = $visible;
     }
 
-    public function set_Identificada($identificada) {
+    public function setIdentificada($identificada) {
         $this->identificada = $identificada;
     }
 }

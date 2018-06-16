@@ -12,19 +12,23 @@ class Epiteto {
         $this->referencia = $referencia;
     }
 
-    public function get_IdEpiteto() {
+    public function getIdEpiteto() {
         return $this->idEpiteto;
     }
 
-    public function get_NombreEpiteto() {
+    public function getNombreEpiteto() {
         return $this->nombre_epiteto;
     }
+    
+    public function getReferencia(){
+        return $this->referencia;
+    }
 
-    public function set_NombreEpiteto($nombre_epiteto) {
+    public function setNombreEpiteto($nombre_epiteto) {
         $this->nombre_epiteto = $nombre_epiteto;
     }
 
-    public function set_Referencia($referencia) {
+    public function setReferencia($referencia) {
         $this->referencia = $referencia;
     }
 

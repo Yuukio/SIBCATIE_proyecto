@@ -4,7 +4,7 @@ include_once 'Conexion.inc.php';
 include_once 'Usuario.inc.php';
 
 class RepositorioUsuario {
-
+    
     public static function obtenerNumeroUsuarios($conexion) {
 
         $total_usuarios = null;
@@ -34,13 +34,21 @@ class RepositorioUsuario {
                         . "VALUES(:nombre, :apellido, :email, :nombre_usuario, :password, NOW(), 1, :telefono)";
 
                 $sentencia = $conexion->prepare($sql);
+                
+                $nombre = $usuario->getNombre();
+                $apellido = $usuario->getApellido();
+                $email = $usuario->getEmail();
+                $nombre_usuario = $usuario->getNombreUsuario();
+                $password = $usuario->getPassword();
+                $telefono = $usuario->getPassword();
+                
 
-                $sentencia->bindParam(':nombre', $usuario->getNombre(), PDO::PARAM_STR);
-                $sentencia->bindParam(':apellido', $usuario->getApellido(), PDO::PARAM_STR);
-                $sentencia->bindParam(':email', $usuario->getEmail(), PDO::PARAM_STR);
-                $sentencia->bindParam(':nombre_usuario', $usuario->getNombreUsuario(), PDO::PARAM_STR);
-                $sentencia->bindParam(':password', $usuario->getPassword(), PDO::PARAM_STR);
-                $sentencia->bindParam(':telefono', $usuario->getTelefono(), PDO::PARAM_STR);
+                $sentencia->bindParam(':nombre', $nombre, PDO::PARAM_STR);
+                $sentencia->bindParam(':apellido', $apellido, PDO::PARAM_STR);
+                $sentencia->bindParam(':email', $email, PDO::PARAM_STR);
+                $sentencia->bindParam(':nombre_usuario', $nombre_usuario, PDO::PARAM_STR);
+                $sentencia->bindParam(':password', $password, PDO::PARAM_STR);
+                $sentencia->bindParam(':telefono', $telefono, PDO::PARAM_STR);
 
                 $usuario_insertado = $sentencia->execute();
             } catch (PDOException $ex) {

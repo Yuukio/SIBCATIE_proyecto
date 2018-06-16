@@ -12,19 +12,19 @@ class Continente {
         $this->ZonaCardinal_idZonaCardinal = $ZonaCardinal_idZonaCardinal;
     }
 
-    public function get_IdContinente() {
+    public function getIdContinente() {
         return $this->idContinente;
     }
 
-    public function get_NombreContinente() {
+    public function getNombreContinente() {
         return $this->nombre_Continente;
     }
 
-    public function get_IdZonaCardinal() {
+    public function getIdZonaCardinal() {
         return $this->ZonaCardinal_idZonaCardinal;
     }
 
-    public function set_NombreContinente($nombre_Continente) {
+    public function setNombreContinente($nombre_Continente) {
         $this->nombre_Continente = $nombre_Continente;
     }
 

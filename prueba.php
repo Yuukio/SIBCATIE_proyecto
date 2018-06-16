@@ -7,12 +7,8 @@ include_once 'app/RepositorioUsuario.inc.php';
 include_once 'app/RepositorioGenero.inc.php';
 
 Conexion::abrir_conexion();
-//$total_usuarios = RepositorioUsuario::obtenerNumeroUsuarios(Conexion::obtener_conexion());
-//Conexion::cerrar_conexion();
 
-//echo $total_usuarios;
-
-for ($i=0; $i < 19; $i++) {
+for ($i=0; $i < 2; $i++) {
 	$nombre = sa(10);
 	$apellido = sa(8);
 	$email = sa(5).'@'.sa(3);
@@ -25,17 +21,14 @@ for ($i=0; $i < 19; $i++) {
         RepositorioUsuario::insertarUsuario(Conexion::obtener_conexion(), $usuario);
 }
 
-
-/*
-for ($i=0; $i < 20; $i++) { 
+for ($i=0; $i < 2; $i++) { 
 	$nombre_genero = sa(15);
 
 	$genero = new Genero('', $nombre_genero);
 
         RepositorioGenero::insertarGenero(Conexion::obtener_conexion(), $genero);
-        
                 
-}*/
+}
 
 function sa($longitud){
 	$caracteres = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';

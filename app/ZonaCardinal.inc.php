@@ -10,15 +10,15 @@ class ZonaCardinal {
         $this->nombre_cardinal = $nombre_cardinal;
     }
 
-    public function get_IdZonaCardinal() {
+    public function getIdZonaCardinal() {
         return $this->idZonaCardinal;
     }
 
-    public function get_NombreZonaCardinal() {
+    public function getNombreZonaCardinal() {
         return $this->nombre_cardinal;
     }
 
-    public function set_idZonaCardinal($nombre_cardinal) {
+    public function setIdZonaCardinal($nombre_cardinal) {
         $this->nombre_cardinal = $nombre_cardinal;
     }
 }

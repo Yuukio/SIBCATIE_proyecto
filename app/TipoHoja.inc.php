@@ -10,15 +10,15 @@ class TipoHoja {
         $this->nombre_hoja = $nombre_hoja;
     }
 
-    public function get_IdHoja() {
+    public function getIdHoja() {
         return $this->idTipoHoja;
     }
 
-    public function get_NombreHoja() {
+    public function getNombreHoja() {
         return $this->nombre_hoja;
     }
 
-    public function set_NombreHoja($nombre_hoja) {
+    public function setNombreHoja($nombre_hoja) {
         $this->nombre_hoja = $nombre_hoja;
     }
 

@@ -12,23 +12,23 @@ class Forma {
         $this->caracteristicas = $caracteristicas;
     }
 
-    public function get_IdForma() {
+    public function getIdForma() {
         return $this->idForma;
     }
 
-    public function get_NombreForma() {
+    public function getNombreForma() {
         return $this->nombre_forma;
     }
 
-    public function get_Caracteristicas() {
+    public function getCaracteristicas() {
         return $this->caracteristicas;
     }
 
-    public function set_NombreForma($nombre_forma) {
+    public function setNombreForma($nombre_forma) {
         $this->nombre_forma = $nombre_forma;
     }
 
-    public function set_Caracteristicas($caracteristicas) {
+    public function setCaracteristicas($caracteristicas) {
         $this->caracteristicas = $caracteristicas;
     }
 
