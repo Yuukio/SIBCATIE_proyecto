@@ -8,16 +8,16 @@ class Consulta {
     private $url_foto;
     private $latitud;
     private $longitud;
-    private $Visitante_idVisitante;
+    private $Usuario_idUsuario;
 
-    public function __construct($idConsulta, $consutla, $fecha_consulta, $url_foto, $latitud, $longitud, $Visitante_idVisitante) {
+    public function __construct($idConsulta, $consutla, $fecha_consulta, $url_foto, $latitud, $longitud, $Usuario_idUsuario) {
         $this->idConsulta = $idConsulta;
         $this->consutla = $consutla;
         $this->fecha_consulta = $fecha_consulta;
         $this->url_foto = $url_foto;
         $this->latitud = $latitud;
         $this->longitud = $longitud;
-        $this->Visitante_idVisitante = $Visitante_idVisitante;
+        $this->Usuario_idUsuario = $Usuario_idUsuario;
     }
 
     public function getIdConsulta() {
@@ -26,7 +26,7 @@ class Consulta {
 
     public function getConsutla() {
         return $this->consutla;
-    }f
+    }
 
     public function getFecha_consulta() {
         return $this->fecha_consulta;
@@ -45,7 +45,6 @@ class Consulta {
     }
 
     public function getVisitante_idVisitante() {
-        return $this->Visitante_idVisitante;
+        return $this->Usuario_idUsuario;
     }
-
 }

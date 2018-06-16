@@ -338,19 +338,6 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `BD_SIBCATIE`.`Visitante`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `BD_SIBCATIE`.`Visitante` (
-  `idVisitante` INT NOT NULL AUTO_INCREMENT,
-  `usuario` VARCHAR(45) NOT NULL,
-  `password` VARCHAR(100) NOT NULL,
-  `email` VARCHAR(100) NOT NULL,
-  PRIMARY KEY (`idVisitante`),
-  UNIQUE INDEX `idVisitante_UNIQUE` (`idVisitante` ASC))
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
 -- Table `BD_SIBCATIE`.`Consulta`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `BD_SIBCATIE`.`Consulta` (

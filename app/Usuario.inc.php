@@ -6,22 +6,24 @@ class Usuario {
     private $nombre;
     private $apellido;
     private $email;
-    private $usuario;
+    private $nombre_usuario;
     private $password;
     private $fecha_registro;
     private $activo;
     private $rol;
+    private $telefono;
 
-    public function __construct($idUsuario, $nombre, $apellido, $email, $usuario, $password, $fecha_registro, $activo, $rol) {
+    public function __construct($idUsuario, $nombre, $apellido, $email, $nombre_usuario, $password, $fecha_registro, $activo, $rol, $telefono) {
         $this->idUsuario = $idUsuario;
         $this->nombre = $nombre;
         $this->apellido = $apellido;
         $this->email = $email;
-        $this->usuario = $usuario;
+        $this->nombre_usuario = $nombre_usuario;
         $this->password = $password;
         $this->fecha_registro = $fecha_registro;
         $this->activo = $activo;
         $this->rol = $rol;
+        $this->telefono = $telefono;
     }
 
     public function getIdUsuario() {
@@ -40,8 +42,8 @@ class Usuario {
         return $this->email;
     }
 
-    public function getUsuario() {
-        return $this->usuario;
+    public function getNombreUsuario() {
+        return $this->nombre_usuario;
     }
 
     public function getPassword() {
@@ -60,6 +62,10 @@ class Usuario {
         return $this->rol;
     }
 
+    public function getTelefono(){
+        return $this->telefono;
+    }
+
     public function setNombre($nombre) {
         $this->nombre = $nombre;
     }
@@ -72,8 +78,8 @@ class Usuario {
         $this->email = $email;
     }
 
-    public function setUsuario($usuario) {
-        $this->usuario = $usuario;
+    public function setNombreUsuario($nombre_usuario) {
+        $this->usuario = $nombre_usuario;
     }
 
     public function setPassword($password) {
@@ -88,4 +94,7 @@ class Usuario {
         $this->rol = $rol;
     }
 
+    public function setTelefono($telefono){
+        $this->telefono = $telefono;
+    }
 }

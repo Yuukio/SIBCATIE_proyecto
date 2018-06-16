@@ -18,9 +18,17 @@ Conexion::cerrar_conexion();
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="dashboard/paginas/home.php">Administracion</a>
-                    </li>
+
+                    <?php
+                    if (true) {
+                        ?>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="dashboard/paginas/home.php">Administracion</a>
+                        </li>
+                        <?php
+                    }
+                    ?>
+
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#page-top">Home</a>
                     </li>
@@ -38,6 +46,13 @@ Conexion::cerrar_conexion();
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#contact">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#">
+                            <?php
+                            echo $total_usuarios;
+                            ?>
+                        </a> 
                     </li>
                     <li style="padding-right: 60px"></li>
                     <li class="nav-item">

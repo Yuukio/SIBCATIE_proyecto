@@ -4,12 +4,12 @@ class Favorito {
 
     private $idFavorito;
     private $Planta_idPlanta;
-    private $Visitante_idVisitante;
+    private $Usuario_idUsuario;
 
-    public function __construct($idFavorito, $Planta_idPlanta, $Visitante_idVisitante) {
+    public function __construct($idFavorito, $Planta_idPlanta, $Usuario_idUsuario) {
         $this->idFavorito = $idFavorito;
         $this->Planta_idPlanta = $Planta_idPlanta;
-        $this->Visitante_idVisitante = $Visitante_idVisitante;
+        $this->Usuario_idUsuario = $Usuario_idUsuario;
     }
 
     public function getIdFavorito() {
@@ -21,7 +21,7 @@ class Favorito {
     }
 
     public function getVisitante_idVisitante() {
-        return $this->Visitante_idVisitante;
+        return $this->Usuario_idUsuario;
     }
 
 }

@@ -9,6 +9,8 @@ class Planta {
     private $altura;
     private $reproduccion;
     private $visible;
+    private $revision;
+    private $identificada;
     private $Forma_idForma;
     private $Color_idColor;
     private $TipoHoja_idTipoHoja;
@@ -19,7 +21,7 @@ class Planta {
     private $Genero_idGenero;
     private $Epiteto_idEpiteto;
 
-    public function __construct($idPlanta, $nombre_comun, $fecha_ingreso, $autor, $altura, $reproduccion, $visible, $Forma_idForma, $Color_idColor, $TipoHoja_idTipoHoja, $Continente_idContinente, $ZonaCardinal_idZonaCardinal, $Familia_idFamilia, $DeterminadaPor_idDeterminadaPor, $Genero_idGenero, $Epiteto_idEpiteto) {
+    public function __construct($idPlanta, $nombre_comun, $fecha_ingreso, $autor, $altura, $reproduccion, $visible, $Forma_idForma, $Color_idColor, $TipoHoja_idTipoHoja, $Continente_idContinente, $ZonaCardinal_idZonaCardinal, $Familia_idFamilia, $DeterminadaPor_idDeterminadaPor, $Genero_idGenero, $Epiteto_idEpiteto, $revision, $identificada) {
 
         $this->idPlanta = $idPlanta;
         $this->nombre_comun = $nombre_comun;
@@ -37,6 +39,8 @@ class Planta {
         $this->DeterminadaPor_idDeterminadaPor = $DeterminadaPor_idDeterminadaPor;
         $this->Genero_idGenero = $Genero_idGenero;
         $this->Epiteto_idEpiteto = $Epiteto_idEpiteto;
+        $this->revision = $revision;
+        $this->identificada = $identificada;
     }
 
     public function get_IdPlanta() {
@@ -103,6 +107,14 @@ class Planta {
         return $this->Epiteto_idEpiteto;
     }
 
+    public function get_Revision(){
+        return $this->revision;
+    }
+
+    public function get_Identificada(){
+        return $this->identificada;
+    }
+
     public function set_NombreComun($nombre_comun) {
         $this->nombre_comun = $nombre_comun;
     }
@@ -119,8 +131,15 @@ class Planta {
         $this->reproduccion = $reproduccion;
     }
 
+    public function set_Revision($revision) {
+        $this->revision = $revision;
+    }
+
     public function set_Visible($visible) {
         $this->visible = $visible;
     }
 
+    public function set_Identificada($identificada) {
+        $this->identificada = $identificada;
+    }
 }

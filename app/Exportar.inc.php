@@ -3,11 +3,11 @@
 class Exportar {
 
     private $Planta_idPlanta;
-    private $Visitante_idVisitante;
+    private $Usuario_idUsuario;
 
-    public function __construct($Planta_idPlanta, $Visitante_idVisitante) {
+    public function __construct($Planta_idPlanta, $Usuario_idUsuario) {
         $this->Planta_idPlanta = $Planta_idPlanta;
-        $this->Visitante_idVisitante = $Visitante_idVisitante;
+        $this->Usuario_idUsuario = $Usuario_idUsuario;
     }
 
     public function getPlanta_idPlanta() {
@@ -15,7 +15,7 @@ class Exportar {
     }
 
     public function getVisitante_idVisitante() {
-        return $this->Visitante_idVisitante;
+        return $this->Usuario_idUsuario;
     }
 
 }
