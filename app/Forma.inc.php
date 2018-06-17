@@ -6,7 +6,7 @@ class Forma {
     private $nombre_forma;
     private $caracteristicas;
 
-    public function __contruct($idForma, $nombre_forma, $caracteristicas) {
+    public function __construct($idForma, $nombre_forma, $caracteristicas) {
         $this->idForma = $idForma;
         $this->nombre_forma = $nombre_forma;
         $this->caracteristicas = $caracteristicas;

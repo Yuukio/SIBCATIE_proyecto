@@ -10,12 +10,14 @@ class Exportar {
         $this->Usuario_idUsuario = $Usuario_idUsuario;
     }
 
-    public function getPlanta_idPlanta() {
+    public function getPlantaIdPlanta() {
         return $this->Planta_idPlanta;
     }
 
-    public function getVisitante_idVisitante() {
+    public function getUsuarioIdUsuario() {
         return $this->Usuario_idUsuario;
     }
+
+
 
 }

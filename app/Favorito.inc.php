@@ -2,26 +2,20 @@
 
 class Favorito {
 
-    private $idFavorito;
-    private $Planta_idPlanta;
-    private $Usuario_idUsuario;
+    private $planta_idplanta;
+    private $usuario_idusuario;
 
-    public function __construct($idFavorito, $Planta_idPlanta, $Usuario_idUsuario) {
-        $this->idFavorito = $idFavorito;
-        $this->Planta_idPlanta = $Planta_idPlanta;
-        $this->Usuario_idUsuario = $Usuario_idUsuario;
+    public function __construct($planta_idplanta, $usuario_idusuario) {
+        $this->planta_idplanta = $planta_idplanta;
+        $this->usuario_idusuario = $usuario_idusuario;
     }
 
-    public function getIdFavorito() {
-        return $this->idFavorito;
+    public function getPlantaIdPlanta() {
+        return $this->planta_idplanta;
     }
 
-    public function getPlanta_idPlanta() {
-        return $this->Planta_idPlanta;
-    }
-
-    public function getVisitante_idVisitante() {
-        return $this->Usuario_idUsuario;
+    public function getUsuarioIdUsuario() {
+        return $this->usuario_idusuario;
     }
 
 }

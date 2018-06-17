@@ -5,7 +5,7 @@ class ZonaCardinal {
     private $idZonaCardinal;
     private $nombre_cardinal;
 
-    public function __contruct($idZonaCardinal, $nombre_cardinal) {
+    public function __construct($idZonaCardinal, $nombre_cardinal) {
         $this->idZonaCardinal = $idZonaCardinal;
         $this->nombre_cardinal = $nombre_cardinal;
     }

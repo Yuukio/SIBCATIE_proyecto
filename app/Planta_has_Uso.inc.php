@@ -2,20 +2,20 @@
 
 class Planta_has_Uso {
 
-    private $Planta_idPlanta;
-    private $Uso_idUso;
+    private $planta_idplanta;
+    private $uso_iduso;
 
-    public function __construct($Planta_idPlanta, $Uso_idUso) {
-        $this->Planta_idPlanta = $Planta_idPlanta;
-        $this->Uso_idUso = $Uso_idUso;
+    public function __construct($planta_idplanta, $uso_iduso) {
+        $this->planta_idplanta = $planta_idplanta;
+        $this->uso_iduso = $uso_iduso;
     }
 
-    public function getPlanta_idPlanta() {
-        return $this->Planta_idPlanta;
+    public function getPlantaidPlanta() {
+        return $this->planta_idplanta;
     }
 
-    public function getUso_idUso() {
-        return $this->Uso_idUso;
+    public function getusoidUso() {
+        return $this->uso_iduso;
     }
 
 }

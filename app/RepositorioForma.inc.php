@@ -11,12 +11,12 @@ class RepositorioForma {
 
         if (isset($conexion)) {
             try {
-                $sql = "INSERT INTO Familia(nombre_familia) VALUES(:nombre_familia)";
+                $sql = "INSERT INTO Forma(nombre_forma, caracteristicas) VALUES(:nombre_forma, :caracteristicas)";
 
                 $sentencia = $conexion->prepare($sql);
 
-                $nombre_forma = $forma->getNombreFamilia();
-                $caracteristicas = $forma->getNombreForma();
+                $nombre_forma = $forma->getNombreForma();
+                $caracteristicas = $forma->getCaracteristicas();
 
                 $sentencia->bindParam(':nombre_forma', $nombre_forma, PDO::PARAM_STR);
                 $sentencia->bindParam(':caracteristicas', $caracteristicas, PDO::PARAM_STR);

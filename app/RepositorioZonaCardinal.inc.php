@@ -17,7 +17,7 @@ class RepositorioZonaCardinal {
 
                 $nombre_cardinal = $cardinal->getNombreZonaCardinal();
 
-                $sentencia->bindParam(':nombre_genero', $nombre_cardinal, PDO::PARAM_STR);
+                $sentencia->bindParam(':nombre_cardinal', $nombre_cardinal, PDO::PARAM_STR);
 
                 $cardinal_insertado = $sentencia->execute();
             } catch (PDOException $ex) {

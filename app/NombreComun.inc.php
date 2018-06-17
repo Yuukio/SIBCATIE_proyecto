@@ -18,7 +18,7 @@ class NombreComun{
         return $this->idNombreComun;
     }
 
-    public function getNombre_comun() {
+    public function getNombreComun() {
         return $this->nombre_comun;
     }
 
@@ -26,11 +26,11 @@ class NombreComun{
         return $this->lengua;
     }
 
-    public function getPlanta_idPlanta() {
+    public function getPlantaIdPlanta() {
         return $this->Planta_idPlanta;
     }
 
-    public function setNombre_comun($nombre_comun) {
+    public function setNombreComun($nombre_comun) {
         $this->nombre_comun = $nombre_comun;
     }
 

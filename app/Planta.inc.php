@@ -3,6 +3,7 @@
 class Planta {
 
     private $idPlanta;
+    private $idMascara;
     private $nombre_comun;
     private $fecha_ingreso;
     private $autor;
@@ -20,12 +21,16 @@ class Planta {
     private $DeterminadaPor_idDeterminadaPor;
     private $Genero_idGenero;
     private $Epiteto_idEpiteto;
+    private $fuente_informacion;
 
-    public function __construct($idPlanta, $nombre_comun, $fecha_ingreso, $autor, $altura, $reproduccion, $visible, $Forma_idForma, $Color_idColor, $TipoHoja_idTipoHoja, $Continente_idContinente, $ZonaCardinal_idZonaCardinal, $Familia_idFamilia, $DeterminadaPor_idDeterminadaPor, $Genero_idGenero, $Epiteto_idEpiteto, $revision, $identificada) {
+    public function __construct($idPlanta, $idMascara, $nombre_comun, $fecha_ingreso, $fuente_informacion, $autor, $altura, $reproduccion, $visible, $Forma_idForma, $Color_idColor, $TipoHoja_idTipoHoja, 
+            $Continente_idContinente, $ZonaCardinal_idZonaCardinal, $Familia_idFamilia, $DeterminadaPor_idDeterminadaPor, $Genero_idGenero, $Epiteto_idEpiteto, $revision, $identificada) {
 
         $this->idPlanta = $idPlanta;
+        $this->idPlanta = $idMascara;
         $this->nombre_comun = $nombre_comun;
         $this->fecha_ingreso = $fecha_ingreso;
+        $this->fuente_informacion = $fuente_informacion;
         $this->autor = $autor;
         $this->altura = $altura;
         $this->reproduccion = $reproduccion;
@@ -47,12 +52,20 @@ class Planta {
         return $this->idPlanta;
     }
 
+    function getIdMascara() {
+        return $this->idMascara;
+    }
+    
     public function getNombreComun() {
         return $this->nombre_comun;
     }
 
     public function getFechaIngreso() {
         return $this->fecha_ingreso;
+    }
+
+    public function getFuenteInformacion(){
+        return $this->fuente_informacion;
     }
 
     public function getAutor() {
@@ -71,39 +84,39 @@ class Planta {
         return $this->visible;
     }
 
-    public function getForma_IdForma() {
+    public function getFormaIdForma() {
         return $this->Forma_idForma;
     }
 
-    public function getColor_idColor() {
+    public function getColorIdColor() {
         return $this->Color_idColor;
     }
 
-    public function getTipoHoja_idTipoHoja() {
+    public function getTipoHojaIdTipoHoja() {
         return $this->TipoHoja_idTipoHoja;
     }
 
-    public function getContinente_idContinente() {
+    public function getContinenteIdContinente() {
         return $this->Continente_idContinente;
     }
 
-    public function getZonaCardinal_idZonaCardinal() {
+    public function getZonaCardinalIdZonaCardinal() {
         return $this->ZonaCardinal_idZonaCardinal;
     }
 
-    public function getFamilia_idFamilia() {
+    public function getFamiliaIdFamilia() {
         return $this->Familia_idFamilia;
     }
 
-    public function getDeterminadaPor_idDeterminadaPor() {
+    public function getDeterminadaPorIdDeterminadaPor() {
         return $this->DeterminadaPor_idDeterminadaPor;
     }
 
-    public function getGenero_idGenero() {
+    public function getGeneroIdGenero() {
         return $this->Genero_idGenero;
     }
 
-    public function getEpiteto_idEpiteto() {
+    public function getEpitetoIdEpiteto() {
         return $this->Epiteto_idEpiteto;
     }
 
@@ -117,6 +130,10 @@ class Planta {
 
     public function setNombreComun($nombre_comun) {
         $this->nombre_comun = $nombre_comun;
+    }
+
+    public function setFuenteInfromacion($fuente_informacion){
+        $this->fuente_informacion = $fuente_informacion;
     }
 
     public function setAutor($autor) {

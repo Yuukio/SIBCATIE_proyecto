@@ -4,12 +4,10 @@ class Continente {
 
     private $idContinente;
     private $nombre_Continente;
-    private $ZonaCardinal_idZonaCardinal;
 
-    public function __construct($idContinente, $nombre_Continente, $ZonaCardinal_idZonaCardinal) {
+    public function __construct($idContinente, $nombre_Continente) {
         $this->idContinente = $idContinente;
         $this->nombre_Continente = $nombre_Continente;
-        $this->ZonaCardinal_idZonaCardinal = $ZonaCardinal_idZonaCardinal;
     }
 
     public function getIdContinente() {
@@ -18,10 +16,6 @@ class Continente {
 
     public function getNombreContinente() {
         return $this->nombre_Continente;
-    }
-
-    public function getIdZonaCardinal() {
-        return $this->ZonaCardinal_idZonaCardinal;
     }
 
     public function setNombreContinente($nombre_Continente) {
