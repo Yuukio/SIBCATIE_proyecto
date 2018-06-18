@@ -14,7 +14,7 @@ class Planta_has_Uso {
         return $this->planta_idplanta;
     }
 
-    public function getusoidUso() {
+    public function getUsoIdUso() {
         return $this->uso_iduso;
     }
 

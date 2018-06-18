@@ -45,7 +45,7 @@ include_once 'app/RepositorioZonaCardinal.inc.php';
 Conexion::abrir_conexion();
 
 /* * ****USUARIO */
-/*for ($i = 0; $i < 50; $i++) {
+for ($i = 0; $i < 50; $i++) {
     $nombre = sa(10);
     $apellido = sa(8);
     $email = sa(5) . '@' . sa(3) . '.com';
@@ -58,7 +58,7 @@ Conexion::abrir_conexion();
     RepositorioUsuario::insertarUsuario(Conexion::obtener_conexion(), $usuario);
 }
 /* * ***GENERO */
-/*for ($i = 0; $i < 30; $i++) {
+for ($i = 0; $i < 30; $i++) {
     $nombre_genero = sa(15);
 
     $genero = new Genero('', $nombre_genero);
@@ -67,7 +67,7 @@ Conexion::abrir_conexion();
 }
 
 /* * ***EPITETO */
-/*for ($i = 0; $i < 30; $i++) {
+for ($i = 0; $i < 30; $i++) {
     $nombre_epiteto = sa(10);
     $referencia = sa(2) . '.' . sa(10);
 
@@ -77,7 +77,7 @@ Conexion::abrir_conexion();
 }
 
 /* * ***COLOR */
-/*for ($i = 0; $i < 10; $i++) {
+for ($i = 0; $i < 10; $i++) {
     $nombre_color = sa(10);
 
     $color = new Colores('', $nombre_color);
@@ -85,13 +85,8 @@ Conexion::abrir_conexion();
     RepositorioColor::insertarColor(Conexion::obtener_conexion(), $color);
 }
 
-/* * ***CONSULTA */
-/*for ($i = 0; $i < 1; $i++) {
-    
-}
-
 /* * ***DETERMINADA POR */
-/*for ($i = 0; $i < 15; $i++) {
+for ($i = 0; $i < 15; $i++) {
     $nombre_determinada = sa(15);
 
     $determinada_por = new DeterminadaPor('', $nombre_determinada, '');
@@ -100,7 +95,7 @@ Conexion::abrir_conexion();
 }
 
 /* * ***ESTADO SALUD */
-/*for ($i = 0; $i < 1; $i++) {
+for ($i = 0; $i < 1; $i++) {
 
     $nombre_estado1 = '1- Apariencia muy saludable (80-100%)';
     $nombre_estado2 = '2- Apariencia 60-80% saludable';
@@ -122,7 +117,7 @@ Conexion::abrir_conexion();
 }
 
 /* * ***FAMILIA */
-/*for ($i = 0; $i < 50; $i++) {
+for ($i = 0; $i < 50; $i++) {
     $nombre_familia = sa(15);
 
     $familia = new Familia('', $nombre_familia);
@@ -131,7 +126,7 @@ Conexion::abrir_conexion();
 }
 
 /* * ***FORMA */
-/*for ($i = 0; $i < 10; $i++) {
+for ($i = 0; $i < 10; $i++) {
     $nombre_forma = sa(10);
     $caracteristicas = lorem();
 
@@ -140,13 +135,8 @@ Conexion::abrir_conexion();
     RepositorioForma::insertarForma(Conexion::obtener_conexion(), $forma);
 }
 
-/* * ***FOTO */
-/*for ($i = 0; $i < 1; $i++) {
-    
-}
-
 /* * ***TIPO HOJA */
-/*for ($i = 0; $i < 10; $i++) {
+for ($i = 0; $i < 10; $i++) {
     $nombre_hoja = sa(10);
     $forma = sa(8);
 
@@ -156,7 +146,7 @@ Conexion::abrir_conexion();
 }
 
 /* * ***ZONA CARDINAL */
-/*for ($i = 0; $i < 4; $i++) {
+for ($i = 0; $i < 4; $i++) {
     $nombre_cardinal = sa(10);
 
     $cardinal = new ZonaCardinal('', $nombre_cardinal);
@@ -165,7 +155,7 @@ Conexion::abrir_conexion();
 }
 
 /* * ***CONTINENTE */
-/*for ($i = 0; $i < 1; $i++) {
+for ($i = 0; $i < 1; $i++) {
 
     $continente1 = new Continente('', 'America');
     $continente2 = new Continente('', 'Africa');
@@ -180,24 +170,34 @@ Conexion::abrir_conexion();
     RepositorioContinente::insertarContinente(Conexion::obtener_conexion(), $continente5);
 }
 
+/* * ***USO */
+for ($i = 0; $i < 20; $i++) {
+    $nombre_uso = sa(10);
+
+    $uso = new Uso('', $nombre_uso);
+
+    RepositorioUso::insertarUso(Conexion::obtener_conexion(), $uso);
+}
+
 /* * ***PLANTA */
-/*for ($i = 0; $i < 60; $i++) {
+for ($i = 0; $i < 60; $i++) {
+    
     $idMascara = 1;
-    $Genero_idGenero = rand(0, 30);
-    $Epiteto_idEpiteto = rand(0, 30);
+    $Genero_idGenero = 1;
+    $Epiteto_idEpiteto = 1;
     $nombre_cientifico = sa(15);
     $autor = sa(15);
     $fuente_informacion = sa(20);
-    $altura = rand(1, 30);
-    $Forma_idForma = rand(0, 10);
-    $Color_idColor = rand(0, 10);
-    $TipoHoja_idTipoHoja = rand(0, 10);
-    $Continente_idContinente = rand(0, 5);
-    $ZonaCardinal_idZonaCardinal = rand(0, 4);
-    $Familia_idFamilia = rand(0, 50);
-    $DeterminadaPor_idDeterminadaPor = rand(0, 15);
-
-    $planta = new Planta('', $idMascara, $Genero_idGenero, $Epiteto_idEpiteto, $nombre_cientifico, $autor, '', $fuente_informacion, $altura, $Forma_idForma, $Color_idColor, $TipoHoja_idTipoHoja, $Continente_idContinente, $ZonaCardinal_idZonaCardinal, $Familia_idFamilia, $DeterminadaPor_idDeterminadaPor, '', '', '', '');
+    $altura = 1;
+    $Forma_idForma = 1;
+    $Color_idColor = 1;
+    $TipoHoja_idTipoHoja = 1;
+    $Continente_idContinente = 1;
+    $ZonaCardinal_idZonaCardinal = 1;
+    $Familia_idFamilia = 1;
+    $DeterminadaPor_idDeterminadaPor = 1;
+    
+    $planta = new Planta('', $idMascara, $Genero_idGenero, $Epiteto_idEpiteto, $nombre_cientifico, $autor, '', $fuente_informacion, $altura, $Forma_idForma, $Color_idColor, $TipoHoja_idTipoHoja, $Continente_idContinente, $ZonaCardinal_idZonaCardinal, $Familia_idFamilia, $DeterminadaPor_idDeterminadaPor, '', '', '', ''); 
 
     RepositorioPlanta::insertarPlanta(Conexion::obtener_conexion(), $planta);
 }
@@ -211,15 +211,6 @@ for ($i = 0; $i < 5; $i++) {
     $nombre_comun = new NombreComun('', $nombre_nombre_comun, $lengua, $planta_idplanta);
 
     RepositorioNombreComun::insertarNombreComun(Conexion::obtener_conexion(), $nombre_comun);
-}
-
-/* * ***USO */
-/*for ($i = 0; $i < 20; $i++) {
-    $nombre_uso = sa(10);
-
-    $uso = new Uso('', $nombre_uso);
-
-    RepositorioUso::insertarUso(Conexion::obtener_conexion(), $uso);
 }
 
 /* * ***PLANTA HAS USO */

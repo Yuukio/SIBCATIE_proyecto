@@ -1,34 +1,84 @@
 <?php
 
 include_once 'app/Conexion.inc.php';
-include_once 'app/Genero.inc.php';
-include_once 'app/Usuario.inc.php';
-include_once 'app/RepositorioUsuario.inc.php';
-include_once 'app/RepositorioGenero.inc.php';
+include_once 'app/Planta.inc.php';
+include_once 'app/RepositorioPlanta.inc.php';
 
 Conexion::abrir_conexion();
 
-for ($i=0; $i < 2; $i++) {
-	$nombre = sa(10);
-	$apellido = sa(8);
-	$email = sa(5).'@'.sa(3);
-	$nombre_usuario = sa(6);
-	$password = password_hash('123456', PASSWORD_DEFAULT);
-        $telefono = 88888888;
+/* * ***PLANTA */
+for ($i = 0; $i < 60; $i++) {
+    /*
+    $idMascara = 1;
+    $Genero_idGenero = rand(0, 10);
+    $Epiteto_idEpiteto = rand(0, 10);
+    $nombre_cientifico = sa(15);
+    $autor = sa(15);
+    $fuente_informacion = sa(20);
+    $altura = rand(1, 30);
+    $Forma_idForma = rand(0, 3);
+    $Color_idColor = rand(0, 3);
+    $TipoHoja_idTipoHoja = rand(0, 3);
+    $Continente_idContinente = rand(0, 2);
+    $ZonaCardinal_idZonaCardinal = rand(0, 1);
+    $Familia_idFamilia = rand(0, 20);
+    $DeterminadaPor_idDeterminadaPor = rand(0, 10);
+    */
+    $idMascara = 1;
+    $Genero_idGenero = 1;
+    $Epiteto_idEpiteto = 1;
+    $nombre_cientifico = sa(15);
+    $autor = sa(15);
+    $fuente_informacion = sa(20);
+    $altura = 1;
+    $Forma_idForma = 1;
+    $Color_idColor = 1;
+    $TipoHoja_idTipoHoja = 1;
+    $Continente_idContinente = 1;
+    $ZonaCardinal_idZonaCardinal = 1;
+    $Familia_idFamilia = 1;
+    $DeterminadaPor_idDeterminadaPor = 1;
+    
+     /*$hoy = date('Y-m-d');
 
-	$usuario = new Usuario('', $nombre, $apellido, $email, $nombre_usuario, $password, '', '', '', $telefono);
+    $max_date = 'SELECT MAX (fecha_ingreso) AS "Max Date" FROM PLANTA';
 
-        RepositorioUsuario::insertarUsuario(Conexion::obtener_conexion(), $usuario);
+    if ($max_date == $hoy) {
+        $id_mascara = $id_mascara + 1;
+    } else {
+        $id_mascara = 1;
+    }
+
+    $hoy = explode('-', $hoy);
+    $mes = $hoy[1];
+    $dia = $hoy[2];
+    $anno = $hoy[0];
+
+    $id_mascara = $anno . $mes . $dia . $id_mascara;
+
+*/     
+    
+    $planta = new Planta('', $idMascara, $Genero_idGenero, $Epiteto_idEpiteto, $nombre_cientifico, $autor, '', $fuente_informacion, $altura, $Forma_idForma, $Color_idColor, $TipoHoja_idTipoHoja, $Continente_idContinente, $ZonaCardinal_idZonaCardinal, $Familia_idFamilia, $DeterminadaPor_idDeterminadaPor, '', '', '', ''); 
+
+    RepositorioPlanta::insertarPlanta(Conexion::obtener_conexion(), $planta);
 }
 
-for ($i=0; $i < 2; $i++) { 
-	$nombre_genero = sa(15);
+/*
+  SELECT MAX (ord_date) AS "Max Date"
+  FROM orders;
 
-	$genero = new Genero('', $nombre_genero);
+ * selecciona la fecha maxima de la tabla, luego la comparo con la fecha actual, si son iguales, extraigo el id y le sumo uno, si no
+ * pongo que el id sea 01. Luego concateno la fecha extrayendo por separado el dia mes y anno con...
 
-        RepositorioGenero::insertarGenero(Conexion::obtener_conexion(), $genero);
-                
-}
+  $ date = "07/08/2015";
+  $ date = explode ('/', $ date);
+
+ * luego los meto en variables y los concateno todos juntos.
+
+  $month = $date[0];
+  $day   = $date[1];
+  $year  = $date[2];
+ */
 
 function sa($longitud){
 	$caracteres = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';

@@ -40,7 +40,7 @@ class RepositorioUsuario {
                 $email = $usuario->getEmail();
                 $nombre_usuario = $usuario->getNombreUsuario();
                 $password = $usuario->getPassword();
-                $telefono = $usuario->getPassword();
+                $telefono = $usuario->getTelefono();
                 
                 $sentencia->bindParam(':nombre', $nombre, PDO::PARAM_STR);
                 $sentencia->bindParam(':apellido', $apellido, PDO::PARAM_STR);

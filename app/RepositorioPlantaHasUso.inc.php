@@ -1,7 +1,7 @@
 <?php
 
 include_once 'Conexion.inc.php';
-include_once 'Historial.inc.php';
+include_once 'Planta_has_Uso.inc.php';
 
 class RepositorioPlantaHasUso {
 
@@ -11,15 +11,15 @@ class RepositorioPlantaHasUso {
 
         if (isset($conexion)) {
             try {
-                $sql = "INSERT INTO Planta_Has_Uso(Planta_idPlanta, Uso_idUso) VALUES(:Planta_Has_Uso, :Uso_idUso)";
+                $sql = "INSERT INTO Planta_Has_Uso(Planta_idPlanta, Uso_idUso) VALUES(:Planta_idPlanta, :Uso_idUso)";
 
                 $sentencia = $conexion->prepare($sql);
                 
                 $planta_idplanta = $planta_has_uso-> getPlantaIdPlanta();
                 $uso_iduso = $planta_has_uso-> getUsoIdUso();            
 
-                $sentencia -> bindParam(':Planta_idPlanta', $planta_idplanta, PDO::PARAM_STR);
-                $sentencia -> bindParam(':Uso_idUso', $uso_iduso, PDO::PARAM_STR);
+                $sentencia -> bindParam(':Planta_idPlanta', $planta_idplanta);
+                $sentencia -> bindParam(':Uso_idUso', $uso_iduso);
 
                 $planta_has_uso_insertado = $sentencia -> execute();
             } catch (PDOException $ex) {

@@ -1,7 +1,7 @@
 <?php
 
 include_once 'Conexion.inc.php';
-include_once 'Genero.inc.php';
+include_once 'NombreComun.inc.php';
 
 class RepositorioNombreComun {
 
@@ -11,7 +11,7 @@ class RepositorioNombreComun {
 
         if (isset($conexion)) {
             try {
-                $sql = "INSERT INTO NombreComun(nombre_nombre_comun, lengua, planta_idplanta) VALUES(:nombre_comun, :lengua, :planta_idplanta)";
+                $sql = "INSERT INTO NombreComun(nombre_nombre_comun, lengua, Planta_idPlanta) VALUES(:nombre_nombre_comun, :lengua, :Planta_idPlanta)";
 
                 $sentencia = $conexion->prepare($sql);
                 
@@ -19,9 +19,9 @@ class RepositorioNombreComun {
                 $lengua = $nombre_comun-> getLengua();
                 $planta_idplanta = $nombre_comun-> getPlantaIdPlanta();                
 
-                $sentencia -> bindParam(':accion', $nombre_nombre_comun, PDO::PARAM_STR);
-                $sentencia -> bindParam(':Planta_idPlanta', $lengua, PDO::PARAM_STR);
-                $sentencia -> bindParam(':Usuario_idUsuario', $planta_idplanta, PDO::PARAM_STR);
+                $sentencia -> bindParam(':nombre_nombre_comun', $nombre_nombre_comun);
+                $sentencia -> bindParam(':lengua', $lengua);
+                $sentencia -> bindParam(':Planta_idPlanta', $planta_idplanta);
 
                 $nombre_comun_insertado = $sentencia -> execute();
                 
