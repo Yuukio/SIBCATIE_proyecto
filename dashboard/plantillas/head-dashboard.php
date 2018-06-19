@@ -1,3 +1,9 @@
+<?php
+//include_once '../../app/Conexion.inc.php';
+
+
+?>
+
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -34,6 +40,8 @@
     <!-- JQuery DataTable Css -->
     <link href="../plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet">
     <link href="../../css/dashboard.css" rel="stylesheet">
+    
+    
     
 </head>
 

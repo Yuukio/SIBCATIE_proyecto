@@ -1,7 +1,6 @@
 <?php
 Conexion::abrir_conexion();
 $total_usuarios = RepositorioUsuario::obtenerNumeroUsuarios(Conexion::obtener_conexion());
-Conexion::cerrar_conexion();
 ?>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar" data-offset="60">

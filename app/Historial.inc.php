@@ -8,8 +8,7 @@ class Historial {
     private $Planta_idPlanta;
     private $Usuario_idUsuario;
 
-    public function __construct($idActividad, $fecha_historial, $accion, $Planta_idPlanta, $Usuario_idUsuario) {
-        $this->idActividad = $idActividad;
+    public function __construct($fecha_historial, $accion, $Planta_idPlanta, $Usuario_idUsuario) {
         $this->fecha_historial = $fecha_historial;
         $this->accion = $accion;
         $this->Planta_idPlanta = $Planta_idPlanta;

@@ -31,4 +31,32 @@ class RepositorioHistorial {
             return $historial_insertado;
         }
     }
+    
+    public static function obtener_lista_historial($conexion){
+        
+        $historial = [];
+        
+        if (isset($conexion)){
+            try {
+                $sql = "SELECT * FROM Historial ORDER BY fecha_historial DESC";
+                
+                $sentencia = $conexion->prepare($sql);
+                
+                $sentencia -> execute();
+                
+                $resultado = $sentencia -> fetchAll();
+                
+                if(count($resultado)){
+                    foreach ($resultado as $fila) {
+                        $historial[] = new Historial($fila['fecha_historial'],
+                                $fila['accion'], $fila['Planta_idPlanta'], $fila['Usuario_idUsuario']);
+                    }
+                }
+                
+            } catch (PDOException $ex) {
+                print 'ERROR: '.$ex ->getMessage();
+            }
+        }
+        return $historial;
+    }
 }
