@@ -2,6 +2,8 @@
 include_once 'app/Conexion.inc.php';
 include_once 'app/RepositorioUsuario.inc.php';
 include_once 'app/LeerHistorial.inc.php';
+include_once 'app/RepositorioPlanta.inc.php';
+include_once 'app/LeerPlantas.inc.php';
 
 $titulo = 'SIBCATIE';
 
@@ -124,48 +126,7 @@ include_once 'plantillas/navbar.inc.php';
 </section>
 
 <!--********************************-->
-<section class="bg-light" id="portfolio">
-    <div class="centrar">
-        <div class="col-md-5" style="text-align: center">
-            <!--Registro de actividad-->
-            <div class="card">
-                <div class="header">
-                    <h2>HISTORIAL DE ACTIVIDADES</h2>
-                </div>
-                <div>
-                    <div class="scrollable-area">
-                        <div class="row">
-                            <div class="table-responsive">
-                                <table class="table table table-bordered table-striped table-hover table-dark">
-                                    <thead>
-                                        <tr style="color: white">
-                                            <th>
-                                                Fecha actividad
-                                            </th>
-                                            <th>
-                                                Usuario
-                                            </th>
-                                            <th>
-                                                Registro
-                                            </th>
-                                            <th>
-                                                Actividad
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <?php
-                                    LeerHistorial::leer_historial();
-                                    ?>
-                                </table>
-                            </div>
-                        </div>
 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 <!--********************************-->
 
 <!-- SEMANA -->

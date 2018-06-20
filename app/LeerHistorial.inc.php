@@ -7,8 +7,6 @@ class LeerHistorial {
 
     public function leer_historial() {
 
-        Conexion::abrir_conexion();
-
         $historial = RepositorioHistorial::obtener_lista_historial(Conexion::obtener_conexion());
         if (count($historial)) {
 
@@ -25,31 +23,29 @@ class LeerHistorial {
         }
         ?>
 
-        <tbody>
-            <tr valign="top">
-                <td>
-                    <?php
-                    echo $actividad->getFechaHistorial();
-                    ?>
-                </td>
-                <td>
-                    <?php
-                    echo $actividad->getUsuarioIdUsuario();
-                    ?>
-                </td>
-                <td>
-                    <?php
-                    echo $actividad->getPlantaIdPlanta();
-                    ?>
-                </td>
-                <td>
-                    <?php
-                    echo $actividad->getAccion();
-                    ?>
-                </td>
-            </tr>
-        </tbody>
-        
+        <tr valign="top">
+            <td>
+                <?php
+                echo $actividad->getFechaHistorial();
+                ?>
+            </td>
+            <td>
+                <?php
+                echo $actividad->getUsuarioIdUsuario();
+                ?>
+            </td>
+            <td>
+                <?php
+                echo $actividad->getPlantaIdPlanta();
+                ?>
+            </td>
+            <td>
+                <?php
+                echo $actividad->getAccion();
+                ?>
+            </td>
+        </tr>
+
         <?php
     }
 

@@ -3,10 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/SIBCATIE_2.0/prueba.php</file>
-            <file>file:/C:/xampp/htdocs/SIBCATIE_2.0/rellenar-datos.php</file>
-            <file>file:/C:/xampp/htdocs/SIBCATIE_2.0/Foraneas.php</file>
-            <file>file:/C:/xampp/htdocs/SIBCATIE_2.0/script-relleno.php</file>
+            <file>file:/C:/xampp/htdocs/SIBCATIE_2.0/app/RepositorioPlanta.inc.php</file>
+            <file>file:/C:/xampp/htdocs/SIBCATIE_2.0/index.php</file>
+            <file>file:/C:/xampp/htdocs/SIBCATIE_2.0/registros.php</file>
+            <file>file:/C:/xampp/htdocs/SIBCATIE_2.0/app/RepositorioHistorial.inc.php</file>
+            <file>file:/C:/xampp/htdocs/SIBCATIE_2.0/home.php</file>
+            <file>file:/C:/xampp/htdocs/SIBCATIE_2.0/plantillas/menu-lateral.php</file>
         </group>
     </open-files>
 </project-private>

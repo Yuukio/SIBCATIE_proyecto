@@ -6,7 +6,6 @@ class Planta {
     private $idmascara;
     private $genero_idgenero;
     private $epiteto_idepiteto;
-    private $nombre_cientifico;
     private $autor;
     private $fecha_ingreso;
     private $fuente_informacion;
@@ -23,12 +22,10 @@ class Planta {
     private $visible;
     private $revision;
 
-    public function __construct($idplanta, $idmascara, $genero_idgenero, $epiteto_idepiteto, $nombre_cientifico, $autor, $fecha_ingreso, $fuente_informacion, $altura, $forma_idforma, $color_idcolor, $tipohoja_idtipohoja, $continente_idcontinente, $zonacardinal_idzonacardinal, $familia_idfamilia, $determinadapor_iddeterminadapor, $reproduccion, $identificada, $visible, $revision) {
-        $this->idplanta = $idplanta;
+    public function __construct($idmascara, $familia_idfamilia, $genero_idgenero, $epiteto_idepiteto, $autor, $fecha_ingreso, $fuente_informacion, $altura, $forma_idforma, $color_idcolor, $tipohoja_idtipohoja, $determinadapor_iddeterminadapor, $reproduccion, $visible, $revision) {
         $this->idmascara = $idmascara;
         $this->genero_idgenero = $genero_idgenero;
         $this->epiteto_idepiteto = $epiteto_idepiteto;
-        $this->nombre_cientifico = $nombre_cientifico;
         $this->autor = $autor;
         $this->fecha_ingreso = $fecha_ingreso;
         $this->fuente_informacion = $fuente_informacion;
@@ -36,12 +33,9 @@ class Planta {
         $this->forma_idforma = $forma_idforma;
         $this->color_idcolor = $color_idcolor;
         $this->tipohoja_idtipohoja = $tipohoja_idtipohoja;
-        $this->continente_idcontinente = $continente_idcontinente;
-        $this->zonacardinal_idzonacardinal = $zonacardinal_idzonacardinal;
         $this->familia_idfamilia = $familia_idfamilia;
         $this->determinadapor_iddeterminadapor = $determinadapor_iddeterminadapor;
         $this->reproduccion = $reproduccion;
-        $this->identificada = $identificada;
         $this->visible = $visible;
         $this->revision = $revision;
     }
@@ -60,10 +54,6 @@ class Planta {
 
     public function getEpiteto_idepiteto() {
         return $this->epiteto_idepiteto;
-    }
-
-    public function getNombre_cientifico() {
-        return $this->nombre_cientifico;
     }
 
     public function getAutor() {

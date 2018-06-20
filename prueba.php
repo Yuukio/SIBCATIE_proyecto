@@ -8,26 +8,10 @@ Conexion::abrir_conexion();
 
 /* * ***PLANTA */
 for ($i = 0; $i < 60; $i++) {
-    /*
-    $idMascara = 1;
-    $Genero_idGenero = rand(0, 10);
-    $Epiteto_idEpiteto = rand(0, 10);
-    $nombre_cientifico = sa(15);
-    $autor = sa(15);
-    $fuente_informacion = sa(20);
-    $altura = rand(1, 30);
-    $Forma_idForma = rand(0, 3);
-    $Color_idColor = rand(0, 3);
-    $TipoHoja_idTipoHoja = rand(0, 3);
-    $Continente_idContinente = rand(0, 2);
-    $ZonaCardinal_idZonaCardinal = rand(0, 1);
-    $Familia_idFamilia = rand(0, 20);
-    $DeterminadaPor_idDeterminadaPor = rand(0, 10);
-    */
+    
     $idMascara = 1;
     $Genero_idGenero = 1;
     $Epiteto_idEpiteto = 1;
-    $nombre_cientifico = sa(15);
     $autor = sa(15);
     $fuente_informacion = sa(20);
     $altura = 1;
@@ -58,7 +42,7 @@ for ($i = 0; $i < 60; $i++) {
 
 */     
     
-    $planta = new Planta('', $idMascara, $Genero_idGenero, $Epiteto_idEpiteto, $nombre_cientifico, $autor, '', $fuente_informacion, $altura, $Forma_idForma, $Color_idColor, $TipoHoja_idTipoHoja, $Continente_idContinente, $ZonaCardinal_idZonaCardinal, $Familia_idFamilia, $DeterminadaPor_idDeterminadaPor, '', '', '', ''); 
+    $planta = new Planta('', $idMascara, $Genero_idGenero, $Epiteto_idEpiteto, $autor, '', $fuente_informacion, $altura, $Forma_idForma, $Color_idColor, $TipoHoja_idTipoHoja, $Continente_idContinente, $ZonaCardinal_idZonaCardinal, $Familia_idFamilia, $DeterminadaPor_idDeterminadaPor, '', '', '', ''); 
 
     RepositorioPlanta::insertarPlanta(Conexion::obtener_conexion(), $planta);
 }

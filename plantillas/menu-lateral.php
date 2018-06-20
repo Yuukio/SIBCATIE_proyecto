@@ -103,7 +103,7 @@
 
                 <li class="header">CONFIGURACIONES</li>
                 <li>
-                    <a href="../../">
+                    <a href="index.php">
                         <i class="material-icons col-light-blue">donut_large</i>
                         <span>Salir</span>
                     </a>

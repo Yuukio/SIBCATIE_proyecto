@@ -22,7 +22,7 @@ $total_usuarios = RepositorioUsuario::obtenerNumeroUsuarios(Conexion::obtener_co
                     if (true) {
                         ?>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="dashboard/paginas/home.php">Administracion</a>
+                            <a class="nav-link js-scroll-trigger" href="home.php">Administracion</a>
                         </li>
                         <?php
                     }
