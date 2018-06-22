@@ -19,8 +19,7 @@
         // ------ Menu lateral ------
         include_once 'plantillas/menu-lateral.php';
         // ------ Final - Menu lateral ------
-
-        include_once 'app/LeerHistorial.inc.php';
+        //include_once 'app/LeerHistorial.inc.php';
         ?>
 
         <!-- Centro del Contenido-->
@@ -70,9 +69,14 @@
                     <div class="col-md-5">
                         <!--Especies no identificadas-->
                         <div class="card">
-                            <div class="header">
+                            <div class="header bg-red">
                                 <h2>ESPECIES INDEFINIDAS</h2>
                                 <ul class="header-dropdown m-r--5">
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <i class="material-icons">zoom_out_map</i>
+                                        </a>
+                                    </li>
                                     <li class="dropdown">
                                         <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                             <i class="material-icons">more_vert</i>
@@ -96,15 +100,15 @@
                                                         <th>ID</th>
                                                         <th>Familia</th>
                                                         <th>Ingreso</th>
+                                                        <th>Opciones</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <?php
-                                                    $sql_no_identificadas = ""
-                                                            . "SELECT f.nombre_familia, p.fecha_ingreso, p.idPlanta "
-                                                            . "FROM Planta p "
-                                                            . "INNER JOIN Familia f "
-                                                            . "ON p.Familia_idFamilia = f.idFamilia WHERE p.revision = 0";
+                                                    $sql_no_identificadas = "SELECT f.nombre_familia, p.fecha_ingreso, p.idPlanta 
+                                                                            FROM planta p 
+                                                                            INNER JOIN familia f ON p.Familia_idFamilia = f.idFamilia 
+                                                                            WHERE p.revision = 0";
 
                                                     $consulta_no_identificadas = Conexion::obtener_conexion()->query($sql_no_identificadas);
 
@@ -124,9 +128,19 @@
 
                                                         echo'
                                                         <tr valign="top">
-                                                        <td>' . $id_nuevo . '</td> 
-                                                        <td>' . $file_no_identificada['nombre_familia'] . '</td>
-                                                        <td>' . $file_no_identificada['fecha_ingreso'] . '</td>
+                                                            <td>' . $id_nuevo . '</td> 
+                                                            <td>' . $file_no_identificada['nombre_familia'] . '</td>
+                                                            <td>' . $file_no_identificada['fecha_ingreso'] . '</td>
+                                                            <td style="text-align:center;">
+                                                                <a href="#" style="color: #5DADE2">
+                                                                    <i class="material-icons">edit</i>
+                                                                </a>
+                                                                    <i>&nbsp;</i>
+                                                                <a href="#" style="color: #E74C3C">
+                                                                    <i class="material-icons">delete</i>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
                                                             ';
                                                     }
                                                     ?>                                                    
@@ -140,65 +154,41 @@
                     </div>
 
                     <div class="col-md-5">
-                        <!--Registro de actividad-->
                         <div class="card">
-                            <div class="header">
-                                <h2>HISTORIAL DE ACTIVIDADES</h2>
+                            <div class="header bg-orange">
+                                <h2>NUEVA TABLA</h2>
                                 <ul class="header-dropdown m-r--5">
                                     <li class="dropdown">
                                         <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                             <i class="material-icons">more_vert</i>
                                         </a>
                                         <ul class="dropdown-menu pull-right">
-                                            <li><a href="javascript:void(0);">Agregar nuevo registro</a></li>
+                                            <li><a href="javascript:void(0);">Action</a></li>
                                             <li><a href="javascript:void(0);">Another action</a></li>
                                             <li><a href="javascript:void(0);">Something else here</a></li>
                                         </ul>
                                     </li>
                                 </ul>
                             </div>
-                            <div>
-                                <div class="scrollable-area">
-                                    <div class="row">
-                                        <div class="table-responsive">
-                                            <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
-                                                <thead>
-                                                    <tr style="background: white">
-                                                        <th>
-                                                            Fecha actividad
-                                                        </th>
-                                                        <th>
-                                                            Usuario
-                                                        </th>
-                                                        <th>
-                                                            Registro
-                                                        </th>
-                                                        <th>
-                                                            Actividad
-                                                        </th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <?php
-                                                    LeerHistorial::leer_historial();
-                                                    ?>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="body" style="height: 295px">
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
 
             <div class="col-md-6">
                 <!--Usuarios registrados-->
                 <div class="card">
-                    <div class="header">
+                    <div class="header bg-cyan">
                         <h2>USUARIOS ADMINISTRADORES</h2>
                         <ul class="header-dropdown m-r--5">
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <i class="material-icons">zoom_out_map</i>
+                                </a>
+                            </li>
                             <li class="dropdown">
                                 <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                     <i class="material-icons">more_vert</i>
@@ -225,7 +215,7 @@
                                         </thead>
                                         <tbody>
                                             <?php
-                                            $sql_usuarios = "SELECT nombre, apellido, email, telefono FROM Usuario ORDER BY apellido ASC";
+                                            $sql_usuarios = "SELECT nombre, apellido, email, telefono FROM usuario ORDER BY apellido ASC";
 
                                             $consulta_usuarios = Conexion::obtener_conexion()->query($sql_usuarios);
 
@@ -252,9 +242,14 @@
             <div class="col-md-6">
                 <!--Especies no identificadas-->
                 <div class="card">
-                    <div class="header">
+                    <div class="header bg-green">
                         <h2>REGISTRO DE ACTIVIDAD</h2>
                         <ul class="header-dropdown m-r--5">
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <i class="material-icons">zoom_out_map</i>
+                                </a>
+                            </li>
                             <li class="dropdown">
                                 <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                     <i class="material-icons">more_vert</i>

@@ -3,7 +3,7 @@
 
     <?php
     $titulo = 'Historial';
-    include_once '../plantillas/head-dashboard.php';
+    include_once 'plantillas/head-dashboard.php';
     ?>
 
     <body class="theme-red">
@@ -11,13 +11,13 @@
         <?php
         $historial = "active";
         //------ Cargar Pantalla ------
-        include_once '../plantillas/cargar-pantalla.php';
+        include_once 'plantillas/cargar-pantalla.php';
         //------ FINAL Cargar Pantalla ------
         //------ Barra superior ------
-        include_once '../plantillas/barra-superior.php';
+        include_once 'plantillas/barra-superior.php';
         // ------ FINAL - Barra ruperior ------
         // ------ Menu lateral ------
-        include_once '../plantillas/menu-lateral.php';
+        include_once 'plantillas/menu-lateral.php';
         // ------ Final - Menu lateral ------
         ?>
 
@@ -32,5 +32,5 @@
         <!-- #FINAL# Centro del Contenido-->
 
         <?php
-        include_once '../plantillas/dashboard-scripts.php';
+        include_once 'plantillas/dashboard-scripts.php';
         ?>

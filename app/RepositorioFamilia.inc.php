@@ -11,7 +11,7 @@ class RepositorioFamilia {
 
         if (isset($conexion)) {
             try {
-                $sql = "INSERT INTO Familia(nombre_familia) VALUES(:nombre_familia)";
+                $sql = "INSERT INTO familia(nombre_familia) VALUES(:nombre_familia)";
 
                 $sentencia = $conexion->prepare($sql);
 

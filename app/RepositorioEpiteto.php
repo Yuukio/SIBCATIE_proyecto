@@ -11,7 +11,7 @@ class RepositorioEpiteto {
 
         if (isset($conexion)) {
             try {
-                $sql = "INSERT INTO Epiteto(nombre_epiteto, referencia) VALUES(:nombre_epiteto, :referencia)";
+                $sql = "INSERT INTO epiteto(nombre_epiteto, referencia) VALUES(:nombre_epiteto, :referencia)";
 
                 $sentencia = $conexion->prepare($sql);
 

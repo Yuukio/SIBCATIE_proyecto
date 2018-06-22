@@ -11,7 +11,7 @@ class RepositorioEstadoSalud {
 
         if (isset($conexion)) {
             try {
-                $sql = "INSERT INTO EstadoSalud(nombre_estado) VALUES(:nombre_estado)";
+                $sql = "INSERT INTO estadosalud(nombre_estado) VALUES(:nombre_estado)";
 
                 $sentencia = $conexion->prepare($sql);
 

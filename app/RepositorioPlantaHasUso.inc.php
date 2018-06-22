@@ -11,7 +11,7 @@ class RepositorioPlantaHasUso {
 
         if (isset($conexion)) {
             try {
-                $sql = "INSERT INTO Planta_Has_Uso(Planta_idPlanta, Uso_idUso) VALUES(:Planta_idPlanta, :Uso_idUso)";
+                $sql = "INSERT INTO planta_has_uso(planta_idplanta, uso_iduso) VALUES(:planta_idplanta, :uso_iduso)";
 
                 $sentencia = $conexion->prepare($sql);
                 

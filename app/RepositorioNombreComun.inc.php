@@ -11,7 +11,7 @@ class RepositorioNombreComun {
 
         if (isset($conexion)) {
             try {
-                $sql = "INSERT INTO NombreComun(nombre_nombre_comun, lengua, Planta_idPlanta) VALUES(:nombre_nombre_comun, :lengua, :Planta_idPlanta)";
+                $sql = "INSERT INTO nombrecomun(nombre_nombre_comun, lengua, planta_idplanta) VALUES(:nombre_nombre_comun, :lengua, :planta_idplanta)";
 
                 $sentencia = $conexion->prepare($sql);
                 

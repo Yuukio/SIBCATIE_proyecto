@@ -11,7 +11,7 @@ class RepositorioFavorito {
 
         if (isset($conexion)) {
             try {
-                $sql = "INSERT INTO Favorito(Planta_idPlanta, Usuario_idUsuario) VALUES(:Planta_idPlanta, :Usuario_idUsuario)";
+                $sql = "INSERT INTO favorito(planta_idplanta, usuario_idusuario) VALUES(:planta_idplanta, :usuario_idusuario)";
 
                 $sentencia = $conexion->prepare($sql);
                 

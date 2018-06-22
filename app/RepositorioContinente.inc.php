@@ -11,7 +11,7 @@ class RepositorioContinente {
 
         if (isset($conexion)) {
             try {
-                $sql = "INSERT INTO Continente(nombre_continente) VALUES(:nombre_continente)";
+                $sql = "INSERT INTO continente(nombre_continente) VALUES(:nombre_continente)";
 
                 $sentencia = $conexion->prepare($sql);
 

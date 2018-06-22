@@ -39,7 +39,7 @@
                     <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
                     <ul class="dropdown-menu pull-right">
                         <li><a href="javascript:void(0);"><i class="material-icons">person</i>Perfil</a></li>
-                        <li role="seperator" class="divider"></li>
+                        <li class="divider"></li>
                         <li><a href="javascript:void(0);"><i class="material-icons">input</i>Cerrar sesión</a></li>
                     </ul>
                 </div>
@@ -54,7 +54,7 @@
             $home = '';
         }
         if (!isset($registros) || empty($registros)) {
-            $usuarios = '';
+            $registros = '';
         }
         if (!isset($bandeja) || empty($bandeja)) {
             $bandeja = '';
@@ -64,6 +64,9 @@
         }
         if (!isset($mapa) || empty($mapa)) {
             $mapa = '';
+        }
+        if (!isset($usuarios) || empty($usuarios)) {
+            $usuarios = '';
         }
         ?>
 
@@ -82,13 +85,19 @@
                         <span>Administración de Registros</span>
                     </a>
                 </li>
+                <li class= "<?php echo $usuarios ?>" >
+                    <a href="usuarios.php">
+                        <i class="material-icons">people</i>
+                        <span>Administración de Usuarios</span>
+                    </a>
+                </li>
                 <li class= "<?php echo $historial ?>" >
                     <a href="historial.php">
                         <i class="material-icons">history</i>
                         <span>Historial de Actividades</span>
                     </a>
                 </li>
-                 <li class= "<?php echo $bandeja ?>" >
+                <li class= "<?php echo $bandeja ?>" >
                     <a href="bandeja.php">
                         <i class="material-icons">inbox</i>
                         <span>Bandeja de Entrada</span>

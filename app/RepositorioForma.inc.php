@@ -11,7 +11,7 @@ class RepositorioForma {
 
         if (isset($conexion)) {
             try {
-                $sql = "INSERT INTO Forma(nombre_forma, caracteristicas) VALUES(:nombre_forma, :caracteristicas)";
+                $sql = "INSERT INTO forma(nombre_forma, caracteristicas) VALUES(:nombre_forma, :caracteristicas)";
 
                 $sentencia = $conexion->prepare($sql);
 

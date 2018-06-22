@@ -11,7 +11,7 @@ class RepositorioExportar {
 
         if (isset($conexion)) {
             try {
-                $sql = "INSERT INTO Exportar(Planta_idPlanta, Usuario_idUsuario) VALUES(:Planta_idPlanta, :Usuario_idUsuario)";
+                $sql = "INSERT INTO exportar(planta_idplanta, usuario_idusuario) VALUES(:planta_idplanta, :usuario_idusuario)";
 
                 $sentencia = $conexion->prepare($sql);
                 

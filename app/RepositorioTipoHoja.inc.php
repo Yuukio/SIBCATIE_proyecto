@@ -11,7 +11,7 @@ class RepositorioTipoHoja {
 
         if (isset($conexion)) {
             try {
-                $sql = "INSERT INTO TipoHoja(nombre_hoja, forma) VALUES(:nombre_genero, :forma)";
+                $sql = "INSERT INTO tipohoja(nombre_hoja, forma) VALUES(:nombre_genero, :forma)";
 
                 $sentencia = $conexion->prepare($sql);
 

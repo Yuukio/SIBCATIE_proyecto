@@ -11,7 +11,7 @@ class RepositorioUso {
 
         if (isset($conexion)) {
             try {
-                $sql = "INSERT INTO Uso(nombre_uso) VALUES(:nombre_uso)";
+                $sql = "INSERT INTO uso(nombre_uso) VALUES(:nombre_uso)";
 
                 $sentencia = $conexion->prepare($sql);
 

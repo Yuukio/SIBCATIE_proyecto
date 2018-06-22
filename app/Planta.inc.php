@@ -21,8 +21,9 @@ class Planta {
     private $identificada;
     private $visible;
     private $revision;
+    private $excel;
 
-    public function __construct($idmascara, $familia_idfamilia, $genero_idgenero, $epiteto_idepiteto, $autor, $fecha_ingreso, $fuente_informacion, $altura, $forma_idforma, $color_idcolor, $tipohoja_idtipohoja, $determinadapor_iddeterminadapor, $reproduccion, $visible, $revision) {
+    public function __construct($idmascara, $familia_idfamilia, $genero_idgenero, $epiteto_idepiteto, $autor, $fecha_ingreso, $fuente_informacion, $altura, $forma_idforma, $color_idcolor, $tipohoja_idtipohoja, $determinadapor_iddeterminadapor, $reproduccion, $visible, $revision, $excel) {
         $this->idmascara = $idmascara;
         $this->genero_idgenero = $genero_idgenero;
         $this->epiteto_idepiteto = $epiteto_idepiteto;
@@ -38,6 +39,7 @@ class Planta {
         $this->reproduccion = $reproduccion;
         $this->visible = $visible;
         $this->revision = $revision;
+        $this->revision = $excel;
     }
 
     public function getIdplanta() {
@@ -115,7 +117,15 @@ class Planta {
     public function getRevision() {
         return $this->revision;
     }
+    
+    public function getExcel() {
+        return $this->excel;
+    }
 
+    public function setExcel($excel) {
+        $this->excel = $excel;
+    }
+    
     public function setGenero_idgenero($genero_idgenero) {
         $this->genero_idgenero = $genero_idgenero;
     }

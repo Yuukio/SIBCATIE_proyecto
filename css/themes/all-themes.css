@@ -1,5 +1,5 @@
 ﻿.theme-red .navbar {
-  background-color: #004d9c; }
+  background-color: #1B4F72; }
 
 .theme-red .navbar-brand {
   color: #fff; }
@@ -30,7 +30,7 @@
 .theme-red .sidebar .menu .list li.active {
   background-color: transparent; }
   .theme-red .sidebar .menu .list li.active > :first-child i, .theme-red .sidebar .menu .list li.active > :first-child span {
-    color: #7cc13c; }
+    color: #00b0e4; }
 
 .theme-red .sidebar .menu .list .toggled {
   background-color: transparent; }

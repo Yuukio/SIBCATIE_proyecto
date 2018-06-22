@@ -11,7 +11,7 @@ class RepositorioGenero {
 
         if (isset($conexion)) {
             try {
-                $sql = "INSERT INTO Genero(nombre_genero) VALUES(:nombre_genero)";
+                $sql = "INSERT INTO genero(nombre_genero) VALUES(:nombre_genero)";
 
                 $sentencia = $conexion->prepare($sql);
                 

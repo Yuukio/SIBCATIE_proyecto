@@ -7,21 +7,20 @@ include_once 'app/RepositorioPlanta.inc.php';
 Conexion::abrir_conexion();
 
 /* * ***PLANTA */
-for ($i = 0; $i < 60; $i++) {
+for ($i = 0; $i < 1; $i++) {
     
     $idMascara = 1;
-    $Genero_idGenero = 1;
-    $Epiteto_idEpiteto = 1;
+    $genero_idgenero = 1;
+    $epiteto_idepiteto = 1;
     $autor = sa(15);
     $fuente_informacion = sa(20);
     $altura = 1;
-    $Forma_idForma = 1;
-    $Color_idColor = 1;
-    $TipoHoja_idTipoHoja = 1;
-    $Continente_idContinente = 1;
-    $ZonaCardinal_idZonaCardinal = 1;
-    $Familia_idFamilia = 1;
-    $DeterminadaPor_idDeterminadaPor = 1;
+    $forma_idforma = 1;
+    $color_idcolor = 1;
+    $tipohoja_idtipohoja = 1;
+    $familia_idfamilia = 1;
+    $determinadapor_iddeterminadapor = 1;
+    $reproduccion = 1;
     
      /*$hoy = date('Y-m-d');
 
@@ -42,8 +41,9 @@ for ($i = 0; $i < 60; $i++) {
 
 */     
     
-    $planta = new Planta('', $idMascara, $Genero_idGenero, $Epiteto_idEpiteto, $autor, '', $fuente_informacion, $altura, $Forma_idForma, $Color_idColor, $TipoHoja_idTipoHoja, $Continente_idContinente, $ZonaCardinal_idZonaCardinal, $Familia_idFamilia, $DeterminadaPor_idDeterminadaPor, '', '', '', ''); 
-
+    $planta = new Planta($idMascara, $familia_idfamilia, $genero_idgenero, $epiteto_idepiteto, $autor, '', $fuente_informacion, $altura, $forma_idforma, $color_idcolor, $tipohoja_idtipohoja, 
+            $determinadapor_iddeterminadapor, $reproduccion, '', '', '');
+    
     RepositorioPlanta::insertarPlanta(Conexion::obtener_conexion(), $planta);
 }
 

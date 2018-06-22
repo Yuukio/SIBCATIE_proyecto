@@ -11,7 +11,7 @@ class RepositorioColor {
 
         if (isset($conexion)) {
             try {
-                $sql = "INSERT INTO Color(nombre_color) VALUES(:nombre_color)";
+                $sql = "INSERT INTO color(nombre_color) VALUES(:nombre_color)";
 
                 $sentencia = $conexion->prepare($sql);
                 

@@ -34,73 +34,8 @@
 
 
 <script src="js/jquery.stickytableheaders.js"></script>
-<script>
 
-    $(document).ready(function () {
-        // passing a fixedOffset param will cause the table header to stick to the bottom of this element
-        $(".table1").stickyTableHeaders({scrollableArea: $(".scrollable-area1")[0], "fixedOffset": 2});
-
-        $('.destroy').on('click', function (e) {
-            $(".first .table1").stickyTableHeaders('destroy');
-        });
-
-        $('.apply').on('click', function (e) {
-            $('.first .table1').stickyTableHeaders({scrollableArea1: $(".scrollable-area1")[0], "fixedOffset": 2});
-        });
-    });
-
-</script>
-
-<script>
-
-    $(document).ready(function () {
-        // passing a fixedOffset param will cause the table header to stick to the bottom of this element
-        $(".table2").stickyTableHeaders({scrollableArea: $(".scrollable-area2")[0], "fixedOffset": 2});
-
-        $('.destroy').on('click', function (e) {
-            $(".first .table2").stickyTableHeaders('destroy');
-        });
-
-        $('.apply').on('click', function (e) {
-            $('.first .table2').stickyTableHeaders({scrollableArea: $(".scrollable-area2")[0], "fixedOffset": 2});
-        });
-    });
-
-</script>
-
-<script>
-
-    $(document).ready(function () {
-        // passing a fixedOffset param will cause the table header to stick to the bottom of this element
-        $(".table3").stickyTableHeaders({scrollableArea: $(".scrollable-area3")[0], "fixedOffset": 2});
-
-        $('.destroy').on('click', function (e) {
-            $(".first .table3").stickyTableHeaders('destroy');
-        });
-
-        $('.apply').on('click', function (e) {
-            $('.first .table3').stickyTableHeaders({scrollableArea: $(".scrollable-area3")[0], "fixedOffset": 2});
-        });
-    });
-
-</script>
-
-<script>
-
-    $(document).ready(function () {
-        // passing a fixedOffset param will cause the table header to stick to the bottom of this element
-        $(".table4").stickyTableHeaders({scrollableArea: $(".scrollable-area4")[0], "fixedOffset": 2});
-
-        $('.destroy').on('click', function (e) {
-            $(".first .table4").stickyTableHeaders('destroy');
-        });
-
-        $('.apply').on('click', function (e) {
-            $('.first .table4').stickyTableHeaders({scrollableArea: $(".scrollable-area4")[0], "fixedOffset": 2});
-        });
-    });
-
-</script>
+<script src="js/script.js"></script>
 
 <?php
 Conexion::cerrar_conexion();

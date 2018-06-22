@@ -5,7 +5,7 @@
     $titulo = 'Registros';
     include_once 'plantillas/head-dashboard.php';
 
-    include_once 'app/LeerPlantas.inc.php';
+    //include_once 'app/LeerPlantas.inc.php';
 
     $opciones = '<a href="#" style="color: #1ABB24">
                     <i class="material-icons">search</i>
@@ -43,23 +43,33 @@
                 <div class="row clearfix">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="card">
-                            <!--<div class="header">
+                            <div class="header">
                                 <h2>
                                     REGISTRO DE ESPECIES
                                 </h2>
                                 <ul class="header-dropdown m-r--5">
-                                    <li class="dropdown">
-                                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                            <i class="material-icons">more_vert</i>
-                                        </a>
-                                        <ul class="dropdown-menu pull-right">
-                                            <li><a href="javascript:void(0);">Agregar nuevo registro</a></li>
-                                            <li><a href="javascript:void(0);">Otra accion</a></li>
-                                            <li><a href="javascript:void(0);">Cualquier cosa</a></li>
-                                        </ul>
+                                    <li class="dropdown" style="vertical-align: top; margin-right: 10px; top: -5px">
+                                        <div class="btn-group" role="group">
+                                            <button type="button" class="btn btn-info waves-effect">Favorito</button>
+                                            <button type="button" class="btn btn-info waves-effect">Exportar</button>
+                                            <button type="button" class="btn btn-info waves-effect">Ocultar</button>
+                                            <button type="button" class="btn btn-info waves-effect" data-toggle="modal" data-target="#modalNuevo">Agregar</button>
+                                            <div class="btn-group" role="group">
+                                                <button type="button" class="btn btn-info waves-effect dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                    Listas
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="javascript:void(0);" class=" waves-effect waves-block" data-toggle="modal" data-target="#modalFavoritos">Lista de Favoritos</a></li>
+                                                    <li><a href="javascript:void(0);" class=" waves-effect waves-block" data-toggle="modal" data-target="#modalExcel">Lista de Excel</a></li>
+                                                    <li><a href="javascript:void(0);" class=" waves-effect waves-block" data-toggle="modal" data-target="#modalOcultos">Lista de Ocultos</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </li>
+
                                 </ul>
-                            </div>-->
+                            </div>
                             <div class="body">
                                 <div class="table-responsive">
                                     <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
@@ -110,14 +120,14 @@
                                             <?php
                                             $sql = "SELECT P.idPlanta, P.autor, P.fecha_ingreso, P.fuente_informacion, P.altura, P.reproduccion, P.visible, P.revision, Fa.nombre_familia, 
                                                     Ge.nombre_genero, Ep.nombre_epiteto, Fo.nombre_forma, Co.nombre_color, De.nombre_determinado, Ti.nombre_hoja 
-                                                    FROM Planta P 
-                                                    INNER JOIN Familia Fa ON P.Familia_idFamilia = Fa.idFamilia
-                                                    INNER JOIN Genero Ge ON P.Genero_idGenero = Ge.idGenero
-                                                    INNER JOIN Epiteto Ep ON P.Epiteto_idEpiteto = Ep.idEpiteto
-                                                    INNER JOIN Forma Fo ON P.Forma_idForma = Fo.idForma
-                                                    INNER JOIN Color Co ON P.Color_idColor = Co.idColor
-                                                    INNER JOIN TipoHoja Ti ON P.TipoHoja_idTipoHoja = Ti.idTipoHoja
-                                                    INNER JOIN DeterminadaPor De ON P.DeterminadaPor_idDeterminadaPor = De.idDeterminadaPor";
+                                                    FROM planta P 
+                                                    INNER JOIN familia Fa ON P.Familia_idFamilia = Fa.idFamilia
+                                                    INNER JOIN genero Ge ON P.Genero_idGenero = Ge.idGenero
+                                                    INNER JOIN epiteto Ep ON P.Epiteto_idEpiteto = Ep.idEpiteto
+                                                    INNER JOIN forma Fo ON P.Forma_idForma = Fo.idForma
+                                                    INNER JOIN color Co ON P.Color_idColor = Co.idColor
+                                                    INNER JOIN tipohoja Ti ON P.TipoHoja_idTipoHoja = Ti.idTipoHoja
+                                                    INNER JOIN determinadapor De ON P.DeterminadaPor_idDeterminadaPor = De.idDeterminadaPor";
 
                                             $consulta = Conexion::obtener_conexion()->query($sql);
 
@@ -173,16 +183,16 @@
                                                 }
 
                                                 /* comparar fechas 
-                                                $sql_fecha = "SELECT MAX(p.fecha_ingreso), idPlanta FROM planta p";
-                                                $consulta2 = Conexion::obtener_conexion()->query($sql_fecha);
-                                                $fila_fecha = $consulta2->fetch(PDO::FETCH_ASSOC);
-                                                
-                                                $time = time();
-                                                $hoy = date("Y-m-d", $time);
-                                                $fecha_max = $fila_fecha['p.fecha_ingreso'];
-                                                
-                                                echo $hoy;
-                                                echo $fecha_max;*/
+                                                  $sql_fecha = "SELECT MAX(p.fecha_ingreso), idPlanta FROM planta p";
+                                                  $consulta2 = Conexion::obtener_conexion()->query($sql_fecha);
+                                                  $fila_fecha = $consulta2->fetch(PDO::FETCH_ASSOC);
+
+                                                  $time = time();
+                                                  $hoy = date("Y-m-d", $time);
+                                                  $fecha_max = $fila_fecha['p.fecha_ingreso'];
+
+                                                  echo $hoy;
+                                                  echo $fecha_max; */
 
 
                                                 /* asignando en tabla */
@@ -199,11 +209,15 @@
                                                 <td style="text-align:center; width: 5px;">' . $revision . '</td>
                                                 <td style="text-align:center;">
                                                     <a href="#" style="color: #3498DB">
-                                                        <i class="material-icons">search</i>
+                                                        <i class="material-icons" data-toggle="modal" data-target="#modalVer">search</i>
+                                                    </a>
+                                                        <i>&nbsp;</i>
+                                                    <a href="#" style="color: #AF7AC5">
+                                                        <i class="material-icons" data-toggle="modal" data-target="#modalActualizar">edit</i>
                                                     </a>
                                                         <i>&nbsp;</i>
                                                     <a href="#" style="color: #F39C12">
-                                                        <i class="material-icons">add_a_photo</i>
+                                                        <i class="material-icons" data-toggle="modal" data-target="#modalFotos">add_a_photo</i>
                                                     </a>
                                                 </td>
                                                 </tr>
@@ -221,7 +235,7 @@
             </div>
         </section>
         <!-- #FINAL# Centro del Contenido-->
-
         <?php
+        include_once 'plantillas/modal.inc.php';
         include_once 'plantillas/dashboard-scripts.php';
         ?>

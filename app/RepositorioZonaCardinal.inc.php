@@ -11,7 +11,7 @@ class RepositorioZonaCardinal {
 
         if (isset($conexion)) {
             try {
-                $sql = "INSERT INTO ZonaCardinal(nombre_cardinal) VALUES(:nombre_cardinal)";
+                $sql = "INSERT INTO zonacardinal(nombre_cardinal) VALUES(:nombre_cardinal)";
 
                 $sentencia = $conexion->prepare($sql);
 

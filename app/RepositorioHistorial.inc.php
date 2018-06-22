@@ -11,7 +11,7 @@ class RepositorioHistorial {
 
         if (isset($conexion)) {
             try {
-                $sql = "INSERT INTO Historial(fecha_historial, accion, Planta_idPlanta, Usuario_idUsuario) VALUES(NOW(), :accion, :Planta_idPlanta, :Usuario_idUsuario)";
+                $sql = "INSERT INTO historial(fecha_historial, accion, planta_idplanta, usuario_idusuario) VALUES(NOW(), :accion, :planta_idplanta, :usuario_idusuario)";
 
                 $sentencia = $conexion->prepare($sql);
                 

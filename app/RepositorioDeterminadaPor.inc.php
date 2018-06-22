@@ -11,7 +11,7 @@ class RepositorioDeterminadaPor {
 
         if (isset($conexion)) {
             try {
-                $sql = "INSERT INTO DeterminadaPor(nombre_determinado, fecha_determinado) VALUES(:nombre_determinado, NOW())";
+                $sql = "INSERT INTO determinadapor(nombre_determinado, fecha_determinado) VALUES(:nombre_determinado, NOW())";
 
                 $sentencia = $conexion->prepare($sql);
 

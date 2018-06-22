@@ -11,14 +11,18 @@ class RepositorioPlanta {
 
         if (isset($conexion)) {
             try {
-
-                $sql = "INSERT INTO Planta(idMascara, Genero_idGenero, Epiteto_idEpiteto, autor, fecha_ingreso, fuente_informacion, altura, Forma_idForma, Color_idColor, TipoHoja_idTipoHoja, Continente_idContinente, ZonaCardinal_idZonaCardinal, Familia_idFamilia, DeterminadaPor_idDeterminadaPor) "
-                        . "VALUES(:idMascara, :Genero_idGenero, :Epiteto_idEpiteto, :nombre_cientifico, :autor, NOW(), :fuente_informacion, :altura, :Forma_idForma, :Color_idColor, :TipoHoja_idTipoHoja, :Continente_idContinente, :ZonaCardinal_idZonaCardinal, :Familia_idFamilia, :DeterminadaPor_idDeterminadaPor)";
-
-
+               
+                $aql = "INSERT INTO planta(idMascara, Familia_idFamilia, Genero_idGenero, Epiteto_idEpiteto, fecha_ingreso, fuente_informacion, altura, autor, "
+                        . "Forma_idForma, Color_idColor, TipoHoja_idTipoHoja, reproduccion, DeterminadaPor_idDeterminadaPor, "
+                        . "visible, revision, activo, excel) "
+                        . "VALUES (:idMascara, :Familia_idFamilia, :Genero_idGenero, :Epiteto_idEpiteto, NOW(), :fuente_informacion, :altura, :autor, "
+                        . ":Forma_idForma, :Color_idColor, :TipoHoja_idTipoHoja, :reproduccion, :DeterminadaPor_idDeterminadaPor, "
+                        . "'', '', '', :excel)";
+                    
                 $sentencia = $conexion->prepare($sql);
 
                 $idmascara = $planta->getIdmascara();
+                $familia_idfamilia = $planta->getFamilia_idfamilia();
                 $genero_idgenero = $planta->getGenero_idgenero();
                 $epiteto_idepiteto = $planta->getEpiteto_idepiteto();
                 $autor = $planta->getAutor();
@@ -27,10 +31,9 @@ class RepositorioPlanta {
                 $forma_idforma = $planta->getForma_idforma();
                 $color_idcolor = $planta->getColor_idcolor();
                 $tipohoja_idtipohoja = $planta->getTipohoja_idtipohoja();
-                $continente_idcontinente = $planta->getContinente_idcontinente();
-                $zonacardinal_idzonacardinal = $planta->getZonacardinal_idzonacardinal();
-                $familia_idfamilia = $planta->getFamilia_idfamilia();
                 $determinadapor_iddeterminadapor = $planta->getDeterminadapor_iddeterminadapor();
+                $excel = $planta->getExcel();
+                $reproduccion = $planta->getReproduccion();
 
                 $sentencia->bindParam(':idMascara', $idmascara);
                 $sentencia->bindParam(':Genero_idGenero', $genero_idgenero);
@@ -41,10 +44,11 @@ class RepositorioPlanta {
                 $sentencia->bindParam(':Forma_idForma', $forma_idforma);
                 $sentencia->bindParam(':Color_idColor', $color_idcolor);
                 $sentencia->bindParam(':TipoHoja_idTipoHoja', $tipohoja_idtipohoja);
-                $sentencia->bindParam(':Continente_idContinente', $continente_idcontinente);
-                $sentencia->bindParam(':ZonaCardinal_idZonaCardinal', $zonacardinal_idzonacardinal);
                 $sentencia->bindParam(':Familia_idFamilia', $familia_idfamilia);
                 $sentencia->bindParam(':DeterminadaPor_idDeterminadaPor', $determinadapor_iddeterminadapor);
+                $sentencia->bindParam(':excel', $excel);
+                $sentencia->bindParam(':reproduccion', $reproduccion);
+                
 
                 $planta_insertada = $sentencia->execute();
             } catch (PDOException $ex) {
@@ -73,9 +77,10 @@ class RepositorioPlanta {
                     foreach ($resultado as $fila) {
 
                         $plantas[] = new Planta(
-                                $fila['idMascara'], $fila['Familia_idFamilia'], $fila['Genero_idGenero'], $fila['Epiteto_idEpiteto'], $fila['autor'], $fila['fecha_ingreso'], 
-                                $fila['fuente_informacion'], $fila['altura'], $fila['Forma_idForma'], $fila['Color_idColor'], $fila['TipoHoja_idTipoHoja'], 
-                                $fila['DeterminadaPor_idDeterminadaPor'], $fila['reproduccion'], $fila['visible'], $fila['revision']);
+                                
+                                $fila['idMascara'], $fila['Familia_idFamilia'], $fila['Genero_idGenero'], $fila['Epiteto_idEpiteto'], $fila['fecha_ingreso'], 
+                                $fila['fuente_informacion'], $fila['altura'], $fila['autor'], $fila['Forma_idForma'], $fila['Color_idColor'], $fila['TipoHoja_idTipoHoja'], 
+                                $fila['reproduccion'], $fila['DeterminadaPor_idDeterminadaPor'], $fila['visible'], $fila['revision'], $fila['activo'], $fila['excel']);
                     }
                 }
             } catch (PDOException $ex) {
