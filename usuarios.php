@@ -189,56 +189,96 @@
                                 </div>
                                 <div class="body" style="height: 675px">
                                     <div class="container-fluid" style="height: 675px">
-                                        <div class="row" style="height: 675px">
-                                            <form class="contact100-form validate-form">
-                                                <label class="label-input100" for="first-name">Nombre Completo *</label>
-                                                <div class="wrap-input100 rs1 validate-input">
-                                                    <input id="first-name" class="input100" type="text" name="first-name" placeholder="Nombre">
-                                                    <span class="focus-input100"></span>
-                                                </div>
-                                                <div class="wrap-input100 rs1 validate-input">
-                                                    <input class="input100" type="text" name="last-name" placeholder="Apellido">
-                                                    <span class="focus-input100"></span>
+                                        <div class="row clearfix" style="height: 500px">
+
+                                            <!---->
+
+                                            <h4 class="mb-3" style="padding-bottom: 15px; text-align: center">Cemplete los campos de registro</h4>
+                                            <form class="needs-validation"  novalidate>
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="firstName">Nombre</label>
+                                                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                                        <!--<div class="invalid-feedback">
+                                                            Valid first name is required.
+                                                        </div>-->
+                                                    </div>
+                                                    
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="lastName">Apellido</label>
+                                                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                                        <!--<div class="invalid-feedback">
+                                                            Valid last name is required.
+                                                        </div>-->
+                                                    </div>
                                                 </div>
 
-                                                <label class="label-input100" for="email">Dirección de correo electrónico *</label>
-                                                <div class="wrap-input100 validate-input">
-                                                    <input id="email" class="input100" type="text" name="email" placeholder="ejemplo@email.com">
-                                                    <span class="focus-input100"></span>
+                                                <div class="mb-3">
+                                                    <label for="email">Correo electrónico</label>
+                                                    <input type="email" class="form-control" id="email" placeholder="email@ejemplo.com" required>
+                                                    <!--<div class="invalid-feedback">
+                                                        Please enter a valid email address for shipping updates.
+                                                    </div>-->
                                                 </div>
 
-                                                <label class="label-input100" for="phone">Número telefónico</label>
-                                                <div class="wrap-input100">
-                                                    <input id="phone" class="input100" type="text" name="phone" placeholder="#### ####">
-                                                    <span class="focus-input100"></span>
+                                                <hr class="mb-4">
+                                                <div class="mb-3">
+                                                    <label for="username">Usuario </label>
+                                                    <input type="text" class="form-control" id="username" required>
+                                                    <!--<div class="invalid-feedback" style="width: 100%;">
+                                                        Your username is required.
+                                                    </div>-->
                                                 </div>
 
-                                                <label class="label-input100" for="rol">Rol y sección del usuario nuevo*</label>
-                                                <div class="rs1 validate-input">
+                                                <hr class="mb-4">
 
-                                                    <label class="checkbox-inline">
-                                                        <input type="checkbox" value="">Administrador
-                                                    </label>
-                                                    <label class="checkbox-inline">
-                                                        <input type="checkbox" value="">Ayudante
-                                                    </label>
+                                                <div class="mb-3">
+                                                    <label for="tel">Número telefónico</label>
+                                                    <input type="tel" class="form-control" id="tel" placeholder="">
+                                                    <!--<div class="invalid-feedback">
+                                                        Please enter a valid email address for shipping updates.
+                                                    </div>-->
                                                 </div>
 
-                                                <div class="rs1">
-                                                    <select class="" id="sel1">
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                    </select>
-                                                </div>
+                                                <hr class="mb-4">
 
-                                                <div class="container">
-                                                    <button type="button" class="btn btn-primary btn-lg"
-                                                            style="margin-top: 20px; height: 50px; width: 100%; font-size: 20px;">
-                                                        Registrar</button>
+                                                <div class="container-fluid">
+                                                    <div class="col-md-6">
+                                                        <h4 class="">Rol administrativo</h4>
+                                                        <div class="d-block my-3">
+                                                            <div class="custom-control custom-radio">
+                                                                <input id="admin" name="roladmin" type="radio" class="custom-control-input" required>
+                                                                <label class="custom-control-label" for="admin">Credit card</label>
+                                                            </div>
+                                                            <div class="custom-control custom-radio">
+                                                                <input id="ayudante" name="roladmin" type="radio" class="custom-control-input" required>
+                                                                <label class="custom-control-label" for="ayudante">Debit card</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <h4 class="">Sección del Jardín</h4>
+                                                        <div class="d-block my-3">
+                                                            <div class="custom-control custom-radio">
+                                                                <input id="nativo" name="seccion" type="radio" class="custom-control-input" required>
+                                                                <label class="custom-control-label" for="nativo">Credit card</label>
+                                                            </div>
+                                                            <div class="custom-control custom-radio">
+                                                                <input id="cultivo" name="seccion" type="radio" class="custom-control-input" required>
+                                                                <label class="custom-control-label" for="cultivo">Debit card</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
                                                 </div>
+                                                <hr class="mb-4">
+                                                <button class="btn btn-primary btn-lg btn-block" type="submit">Registrar cuenta nueva</button>
                                             </form>
+
+                                            <!---->
+
+
                                         </div>
                                     </div>
                                 </div>

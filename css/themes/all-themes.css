@@ -15,7 +15,7 @@
   .theme-red .nav > li > a:hover {
     background-color: transparent; }
   .theme-red .nav > li > a:focus {
-    background-color: transparent; }
+    background-color: #00b0e4; }
 
 .theme-red .nav .open > a {
   background-color: transparent; }

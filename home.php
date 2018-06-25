@@ -178,68 +178,8 @@
                 </div>
             </div>
 
-            <div class="col-md-6">
-                <!--Usuarios registrados-->
-                <div class="card">
-                    <div class="header bg-cyan">
-                        <h2>USUARIOS ADMINISTRADORES</h2>
-                        <ul class="header-dropdown m-r--5">
-                            <li>
-                                <a href="javascript:void(0);">
-                                    <i class="material-icons">zoom_out_map</i>
-                                </a>
-                            </li>
-                            <li class="dropdown">
-                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                    <i class="material-icons">more_vert</i>
-                                </a>
-                                <ul class="dropdown-menu pull-right">
-                                    <li><a href="javascript:void(0);">Action</a></li>
-                                    <li><a href="javascript:void(0);">Another action</a></li>
-                                    <li><a href="javascript:void(0);">Something else here</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <div class="scrollable-area">
-                            <div class="row">
-                                <div class="table-responsive">
-                                    <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
-                                        <thead>
-                                            <tr style="background: white">
-                                                <th>Nombre</th>
-                                                <th>Email</th>
-                                                <th>Teléfono</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <?php
-                                            $sql_usuarios = "SELECT nombre, apellido, email, telefono FROM usuario ORDER BY apellido ASC";
 
-                                            $consulta_usuarios = Conexion::obtener_conexion()->query($sql_usuarios);
-
-                                            while ($file_usuarios = $consulta_usuarios->fetch(PDO::FETCH_ASSOC)) {
-
-                                                $nombre_completo = $file_usuarios['nombre'] . ' ' . $file_usuarios['apellido'];
-
-                                                echo'
-                                                <tr valign="top">
-                                                <td>' . $nombre_completo . '</td> 
-                                                <td>' . $file_usuarios['email'] . '</td>
-                                                <td>' . $file_usuarios['telefono'] . '</td>
-                                                ';
-                                            }
-                                            ?>                                                    
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
+            <div class="col-md-7">
                 <!--Especies no identificadas-->
                 <div class="card">
                     <div class="header bg-green">
@@ -329,6 +269,67 @@
                                                 ';
                                             }
                                             ?>         
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <!--Usuarios registrados-->
+                <div class="card">
+                    <div class="header bg-cyan">
+                        <h2>USUARIOS ADMINISTRADORES</h2>
+                        <ul class="header-dropdown m-r--5">
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <i class="material-icons">zoom_out_map</i>
+                                </a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <i class="material-icons">more_vert</i>
+                                </a>
+                                <ul class="dropdown-menu pull-right">
+                                    <li><a href="javascript:void(0);">Action</a></li>
+                                    <li><a href="javascript:void(0);">Another action</a></li>
+                                    <li><a href="javascript:void(0);">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="scrollable-area">
+                            <div class="row">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
+                                        <thead>
+                                            <tr style="background: white">
+                                                <th>Nombre</th>
+                                                <th>Email</th>
+                                                <th>Teléfono</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <?php
+                                            $sql_usuarios = "SELECT nombre, apellido, email, telefono FROM usuario ORDER BY apellido ASC";
+
+                                            $consulta_usuarios = Conexion::obtener_conexion()->query($sql_usuarios);
+
+                                            while ($file_usuarios = $consulta_usuarios->fetch(PDO::FETCH_ASSOC)) {
+
+                                                $nombre_completo = $file_usuarios['nombre'] . ' ' . $file_usuarios['apellido'];
+
+                                                echo'
+                                                <tr valign="top">
+                                                <td>' . $nombre_completo . '</td> 
+                                                <td>' . $file_usuarios['email'] . '</td>
+                                                <td>' . $file_usuarios['telefono'] . '</td>
+                                                ';
+                                            }
+                                            ?>                                                    
                                         </tbody>
                                     </table>
                                 </div>

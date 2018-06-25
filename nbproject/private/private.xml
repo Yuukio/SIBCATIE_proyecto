@@ -3,23 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/SIBCATIE_2.0/app/RepositorioPlanta.inc.php</file>
-            <file>file:/C:/xampp/htdocs/SIBCATIE_2.0/app/RepositorioRol.inc.php</file>
-            <file>file:/C:/xampp/htdocs/SIBCATIE_2.0/app/RepositorioUso.inc.php</file>
-            <file>file:/C:/xampp/htdocs/SIBCATIE_2.0/app/Rol.inc.php</file>
-            <file>file:/C:/xampp/htdocs/SIBCATIE_2.0/app/Uso.inc.php</file>
-            <file>file:/C:/xampp/htdocs/SIBCATIE_2.0/app/Seccion.inc.php</file>
-            <file>file:/C:/xampp/htdocs/SIBCATIE_2.0/home.php</file>
-            <file>file:/C:/xampp/htdocs/SIBCATIE_2.0/css/themes/all-themes.css</file>
-            <file>file:/C:/xampp/htdocs/SIBCATIE_2.0/prueba.php</file>
             <file>file:/C:/xampp/htdocs/SIBCATIE_2.0/registros.php</file>
-            <file>file:/C:/xampp/htdocs/SIBCATIE_2.0/rellenar-datos.php</file>
-            <file>file:/C:/xampp/htdocs/SIBCATIE_2.0/app/RepositorioHistorial.inc.php</file>
-            <file>file:/C:/xampp/htdocs/SIBCATIE_2.0/plantillas/barra-superior.php</file>
-            <file>file:/C:/xampp/htdocs/SIBCATIE_2.0/app/RepositorioSeccion.inc.php</file>
-            <file>file:/C:/xampp/htdocs/SIBCATIE_2.0/css/style.css</file>
-            <file>file:/C:/xampp/htdocs/SIBCATIE_2.0/app/Planta.inc.php</file>
-            <file>file:/C:/xampp/htdocs/SIBCATIE_2.0/app/Usuario.inc.php</file>
+            <file>file:/C:/xampp/htdocs/SIBCATIE_2.0/plantillas/mantenimiento_catalogos.inc.php</file>
+            <file>file:/C:/xampp/htdocs/SIBCATIE_2.0/home.php</file>
+            <file>file:/C:/xampp/htdocs/SIBCATIE_2.0/plantillas/registro-plantas.inc.php</file>
+            <file>file:/C:/xampp/htdocs/SIBCATIE_2.0/plantillas/menu-lateral.php</file>
+            <file>file:/C:/xampp/htdocs/SIBCATIE_2.0/plantillas/catalogos-mantenimiento.inc.php</file>
+            <file>file:/C:/xampp/htdocs/SIBCATIE_2.0/plugins/bootstrap/css/bootstrap.css</file>
+            <file>file:/C:/xampp/htdocs/SIBCATIE_2.0/mapa.php</file>
+            <file>file:/C:/xampp/htdocs/SIBCATIE_2.0/plantillas/lista-usuarios.inc.php</file>
         </group>
     </open-files>
 </project-private>

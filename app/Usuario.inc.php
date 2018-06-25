@@ -2,7 +2,7 @@
 
 class Usuario {
 
-    private $idUsuario;
+    private $idusuario;
     private $nombre;
     private $apellido;
     private $email;
@@ -12,9 +12,10 @@ class Usuario {
     private $activo;
     private $rol;
     private $telefono;
+    private $seccion;
 
-    public function __construct($idUsuario, $nombre, $apellido, $email, $nombre_usuario, $password, $fecha_registro, $activo, $rol, $telefono) {
-        $this->idUsuario = $idUsuario;
+    public function __construct($idusuario, $nombre, $apellido, $email, $nombre_usuario, $password, $fecha_registro, $activo, $rol, $seccion, $telefono) {
+        $this->idusuario = $idusuario;
         $this->nombre = $nombre;
         $this->apellido = $apellido;
         $this->email = $email;
@@ -23,11 +24,12 @@ class Usuario {
         $this->fecha_registro = $fecha_registro;
         $this->activo = $activo;
         $this->rol = $rol;
+        $this->seccion = $seccion;
         $this->telefono = $telefono;
     }
-
-    public function getIdUsuario() {
-        return $this->idUsuario;
+    
+    public function getIdusuario() {
+        return $this->idusuario;
     }
 
     public function getNombre() {
@@ -42,7 +44,7 @@ class Usuario {
         return $this->email;
     }
 
-    public function getNombreUsuario() {
+    public function getNombre_usuario() {
         return $this->nombre_usuario;
     }
 
@@ -62,39 +64,12 @@ class Usuario {
         return $this->rol;
     }
 
-    public function getTelefono(){
+    public function getSeccion(){
+        return $this->seccion;
+    }
+
+    public function getTelefono() {
         return $this->telefono;
     }
 
-    public function setNombre($nombre) {
-        $this->nombre = $nombre;
-    }
-
-    public function setApellido($apellido) {
-        $this->apellido = $apellido;
-    }
-
-    public function setEmail($email) {
-        $this->email = $email;
-    }
-
-    public function setNombreUsuario($nombre_usuario) {
-        $this->usuario = $nombre_usuario;
-    }
-
-    public function setPassword($password) {
-        $this->password = $password;
-    }
-
-    public function setActivo($activo) {
-        $this->activo = $activo;
-    }
-
-    public function setRol($rol) {
-        $this->rol = $rol;
-    }
-
-    public function setTelefono($telefono){
-        $this->telefono = $telefono;
-    }
 }

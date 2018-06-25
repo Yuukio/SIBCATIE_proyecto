@@ -36,7 +36,7 @@
         ?>
 
         <!-- Centro del Contenido-->
-        <section class="content" style="height: 10em">
+        <section class="content">
             <!-- Contadores -->
             <div class="container-fluid">
                 <!-- Basic Examples -->

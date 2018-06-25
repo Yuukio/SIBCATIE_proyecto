@@ -7,32 +7,68 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title" id="myModalLabel">Crear nuevo registro de Especie</h4>
             </div>
+            
             <div class="modal-body" style="width: 100%">
                 <!--***************************-->
-                <div class="container">  
-                    <form id="contact" action="" method="post">
-                        <h3>Colorlib Contact Form</h3>
-                        <h4>Contact us for custom quote</h4>
-                        <fieldset>
-                            <input placeholder="Your name" type="text" tabindex="1" required autofocus>
-                        </fieldset>
-                        <fieldset>
-                            <input placeholder="Your Email Address" type="email" tabindex="2" required>
-                        </fieldset>
-                        <fieldset>
-                            <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
-                        </fieldset>
-                        <fieldset>
-                            <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
-                        </fieldset>
-                        <fieldset>
-                            <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
-                        </fieldset>
-                        <fieldset>
-                            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-                        </fieldset>
-                    </form>
-                </div>
+                    <div class="row"> <!-- div da esquerda -->
+                        <!-- Text input CNPJ e Razao Social-->
+                        <div class=""> <!-- div da direita -->
+                            <form id="contact" method="post" class="form" role="form">
+                                <div class="row">
+                                    <div class="col-xs-6 col-md-3 form-group">
+                                        <input class="form-control" id="inputCNPJ" name="CNPJ" placeholder="CNPJ" type="text" required autofocus />
+                                    </div>
+                                    <div class="col-xs-4 col-md-9 form-group">
+                                        <input class="form-control" id="inputrazaosocial" name="razaocosial" placeholder="Razão Social" type="text" />
+                                    </div>
+                                </div> <!-- fim row -->
+                                <!-- Text input endereco-->
+                                <div class="col-xs-4 col-md-12 form-group">
+                                    <div class="controls">
+                                        <input class="form-control" id="inputendereco" name="endereco" placeholder="Endereço"  type="text">
+                                    </div>
+                                </div><!--fim control-group-->
+                                <br> <!--pulando uma linha -->
+                                <!-- Text input cidade e estado-->
+                                <div class="row">
+                                    <div class="col-xs-6 col-md-9 form-group">
+                                        <input class="form-control" id="inputcidade" name="cidade" placeholder="Cidade" type="text" />
+                                    </div>
+                                    <div class="col-xs-4 col-md-3">
+                                        <select class="form-control" id="selectbasic" name="selectestado" >
+                                            <option>Selecione</option>
+                                            <option>AC</option>
+                                            <option>AL</option>
+                                            <option>AP</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xs-6 col-md-3 form-group">
+                                        <input class="form-control" id="inputtelefone" name="telefone" placeholder="Telefone" type="text" />
+                                    </div>
+                                    <div class="col-xs-4 col-md-3 form-group">
+                                        <input class="form-control" id="inputcontato" name="contato" placeholder="Contato" type="text" />
+                                    </div>
+                                    <div class="col-xs-4 col-md-6 form-group">
+                                        <input class="form-control" id="inputemail" name="email" placeholder="E-mail" type="text" />
+                                    </div>
+                                </div><!--fim Text input cidade e estado-->
+                                <div class="col-xs-4 col-md-12 form-group">
+                                    <div class="controls">
+                                        <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea>
+                                    </div>
+                                </div>
+                                <br />
+
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-12 form-group">
+                                        <button class="btn btn-primary pull-right" type="submit">Salvar</button>
+                                        <button class="btn btn-primary pull-right" type="submit">Limpar</button>
+                                        <!--<button class="btn btn-primary pull-right" type="submit">Enviar</button>-->
+                                    </div>
+                                </div>
+                            </form>
+                        </div> <!-- fim div da direita -->
+                    </div> <!-- fim div da esquerda -->
                 <!--***************************-->
             </div>
             <div class="modal-footer">

@@ -30,17 +30,22 @@ class RepositorioUsuario {
 
         if (isset($conexion)) {
             try {
-                $sql = "INSERT INTO usuario(nombre, apellido, email, nombre_usuario, password, fecha_registro, rol, telefono) "
-                        . "VALUES(:nombre, :apellido, :email, :nombre_usuario, :password, NOW(), 1, :telefono)";
+
+                $sql = "INSERT INTO `bd_sibcatie`.`usuario` (`idUsuario`, `nombre`, `apellido`, `email`, `nombre_usuario`, `password`, `fecha_registro`, `activo`, "
+                        . "`telefono`, `rol_idrol`, `seccion_idseccion`) VALUES ('', :nombre, :apellido, :email, :nombre_usuario, :password, NOW(), "
+                        . ":activo, :telefono, :rol_idrol, :seccion_idseccion)";
 
                 $sentencia = $conexion->prepare($sql);
-                
-                $nombre = $usuario->getNombre();
-                $apellido = $usuario->getApellido();
-                $email = $usuario->getEmail();
-                $nombre_usuario = $usuario->getNombreUsuario();
-                $password = $usuario->getPassword();
-                $telefono = $usuario->getTelefono();
+
+                $nombre = $usuario ->getNombre();
+                $apellido = $usuario -> getApellido();
+                $email = $usuario -> getEmail();
+                $nombre_usuario = $usuario -> getNombre_usuario();
+                $password = $usuario -> getPassword();
+                $activo = $usuario -> getActivo();
+                $seccion_idseccion = $usuario -> getSeccion();
+                $rol_idrol = $usuario -> getRol();
+                $telefono = $usuario -> getTelefono();
                 
                 $sentencia->bindParam(':nombre', $nombre, PDO::PARAM_STR);
                 $sentencia->bindParam(':apellido', $apellido, PDO::PARAM_STR);
@@ -48,6 +53,10 @@ class RepositorioUsuario {
                 $sentencia->bindParam(':nombre_usuario', $nombre_usuario, PDO::PARAM_STR);
                 $sentencia->bindParam(':password', $password, PDO::PARAM_STR);
                 $sentencia->bindParam(':telefono', $telefono, PDO::PARAM_STR);
+                $sentencia->bindParam(':rol_idrol', $rol_idrol, PDO::PARAM_STR);
+                $sentencia->bindParam(':seccion_idseccion', $seccion_idseccion, PDO::PARAM_STR);
+                $sentencia->bindParam(':activo', $activo, PDO::PARAM_STR);
+
 
                 $usuario_insertado = $sentencia->execute();
             } catch (PDOException $ex) {
