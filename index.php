@@ -64,7 +64,7 @@ include_once 'plantillas/navbar.inc.php';
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4 class="subheading">Cultivos</h4>
+                                <h4 class="subheading">Colecciones</h4>
                             </div>
                             <div class="timeline-body">
                                 <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
@@ -80,7 +80,7 @@ include_once 'plantillas/navbar.inc.php';
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4 class="subheading">Malezas</h4>
+                                <h4 class="subheading">Banco de semillas Hortículas</h4>
                             </div>
                             <div class="timeline-body">
                                 <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
