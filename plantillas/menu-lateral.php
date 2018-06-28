@@ -79,24 +79,18 @@
                         <span>Home</span>
                     </a>
                 </li>
-                <li class= "<?php echo $mapa ?>" >
-                    <a href="mapa.php">
-                        <i class="material-icons">map</i>
-                        <span>Administración de Listas</span>
-                    </a>
-                </li>
-                <!--<li class= "<?php echo $registros ?>" >
+                <li class= "<?php echo $registros ?>" >
                     <a href="registros.php">
                         <i class="material-icons">view_list</i>
                         <span>Administración de Registros</span>
                     </a>
                 </li>
-                <li class= "<?php echo $usuarios ?>" >
+                <!--<li class= "<?php echo $usuarios ?>" >
                     <a href="usuarios.php">
                         <i class="material-icons">people</i>
                         <span>Administración de Usuarios</span>
                     </a>
-                </li>-->
+                </li>
                 <li class= "<?php echo $historial ?>" >
                     <a href="historial.php">
                         <i class="material-icons">history</i>
@@ -109,7 +103,12 @@
                         <span>Bandeja de Entrada</span>
                     </a>
                 </li>
-                
+                <li class= "<?php echo $mapa ?>" >
+                    <a href="mapa.php">
+                        <i class="material-icons">map</i>
+                        <span>Mapa del CATIE</span>
+                    </a>
+                </li>-->
 
                 <li class="header">CONFIGURACIONES</li>
                 <li>

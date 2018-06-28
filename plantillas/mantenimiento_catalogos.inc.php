@@ -2,7 +2,11 @@
     <div class="row clearfix">
         <div class="col-md-3">
             <div class="tabC">
-                <button class="tablinks" onclick="openCity(event, 'Familia')" id="defaultOpen">Familias</button>
+                <button class="tablinks" onclick="openCity(event, 'Reino')" id="defaultOpen">Reino</button>
+                <button class="tablinks" onclick="openCity(event, 'Division')">División</button>
+                <button class="tablinks" onclick="openCity(event, 'Clase')">Clase</button>
+                <button class="tablinks" onclick="openCity(event, 'Orden')">Orden</button>
+                <button class="tablinks" onclick="openCity(event, 'Familia')">Familias</button>
                 <button class="tablinks" onclick="openCity(event, 'Genero')">Géneros</button>
                 <button class="tablinks" onclick="openCity(event, 'Epiteto')">Epítetos</button>
                 <button class="tablinks" onclick="openCity(event, 'Color')">Colores</button>
@@ -11,6 +15,266 @@
                 <button class="tablinks" onclick="openCity(event, 'Tipo')">Tipos de Hoja</button>
                 <button class="tablinks" onclick="openCity(event, 'Uso')">Usos</button>
                 <button class="tablinks" onclick="openCity(event, 'Estado')">Estados de Salud</button>
+            </div>
+        </div>
+
+        <!--***********TAB REINO************-->
+        <div class="col-md-9">
+            <div id="Reino" class="tabcontentC">
+                <div class="card" id="tabla-reino">
+                    <div class="header bg-cyan">
+                        <h2>REINOS</h2>
+                        <ul class="header-dropdown m-r--5">
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <i class="material-icons">more_vert</i>
+                                </a>
+                                <ul class="dropdown-menu pull-right">
+                                    <li><a href="javascript:void(0);" data-toggle="modal" data-target="#modalReino">Agregar nuevo reino</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="body">
+                        <div class="table-responsive">
+                                <!--<table class="table table-bordered table-striped table-hover">-->
+                            <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
+                                <thead>
+                                    <tr style="background: white">
+                                        <th>ID</th>
+                                        <th>Reino</th>
+                                        <th>Opciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php
+                                    $sql_reino = "SELECT `idReino`, `nombre_reino` FROM `reino`";
+
+                                    $consulta_reino = Conexion::obtener_conexion()->query($sql_reino);
+
+                                    while ($fila_reino = $consulta_reino->fetch(PDO::FETCH_ASSOC)) {
+
+                                        $id_reino = $fila_reino['idReino'];
+
+                                        $id_reino_nuevo = str_pad($id_reino, 3, "0", STR_PAD_LEFT);
+
+                                        echo'
+                                        <tr valign="top">
+                                            <td>' . $id_reino_nuevo . '</td>
+                                            <td>' . $fila_reino['nombre_reino'] . '</td>
+                                            <td style="text-align:center;">
+                                                <a href="#" style="color: #5DADE2">
+                                                    <i class="material-icons">edit</i>
+                                                </a>
+                                                    <i>&nbsp;</i>
+                                                <a href="#" style="color: #E74C3C">
+                                                    <i class="material-icons">delete</i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                            ';
+                                    }
+                                    ?>                                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--***********TAB DIVISION************-->
+        <div class="col-md-9">
+            <div id="Division" class="tabcontentC">
+                <div class="card">
+                    <div class="header bg-cyan">
+                        <h2>DIVISIONES</h2>
+                        <ul class="header-dropdown m-r--5">
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <i class="material-icons">more_vert</i>
+                                </a>
+                                <ul class="dropdown-menu pull-right">
+                                    <li><a href="javascript:void(0);">Agregar nueva división</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="body">
+                        <div class="table-responsive">
+                                <!--<table class="table table-bordered table-striped table-hover">-->
+                            <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
+                                <thead>
+                                    <tr style="background: white">
+                                        <th>ID</th>
+                                        <th>División</th>
+                                        <th>Opciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php
+                                    $sql_division = "SELECT `idDivision`, `nombre_division` FROM `division`";
+
+                                    $consulta_division = Conexion::obtener_conexion()->query($sql_division);
+
+                                    while ($fila_division = $consulta_division->fetch(PDO::FETCH_ASSOC)) {
+
+                                        $id_division = $fila_division['idDivision'];
+
+                                        $id_division_nuevo = str_pad($id_division, 3, "0", STR_PAD_LEFT);
+
+                                        echo'
+                                        <tr valign="top">
+                                            <td>' . $id_division_nuevo . '</td>
+                                            <td>' . $fila_division['nombre_division'] . '</td>
+                                            <td style="text-align:center;">
+                                                <a href="#" style="color: #5DADE2">
+                                                    <i class="material-icons">edit</i>
+                                                </a>
+                                                    <i>&nbsp;</i>
+                                                <a href="#" style="color: #E74C3C">
+                                                    <i class="material-icons">delete</i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                            ';
+                                    }
+                                    ?>                                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--***********TAB CLASE************-->
+        <div class="col-md-9">
+            <div id="Clase" class="tabcontentC">
+                <div class="card">
+                    <div class="header bg-cyan">
+                        <h2>CLASES</h2>
+                        <ul class="header-dropdown m-r--5">
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <i class="material-icons">more_vert</i>
+                                </a>
+                                <ul class="dropdown-menu pull-right">
+                                    <li><a href="javascript:void(0);">Agregar nueva clase</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="body">
+                        <div class="table-responsive">
+                                <!--<table class="table table-bordered table-striped table-hover">-->
+                            <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
+                                <thead>
+                                    <tr style="background: white">
+                                        <th>ID</th>
+                                        <th>Clase</th>
+                                        <th>Opciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php
+                                    $sql_clase = "SELECT `idClase`, `nombre_clase` FROM `clase`";
+
+                                    $consulta_clase = Conexion::obtener_conexion()->query($sql_clase);
+
+                                    while ($fila_clase = $consulta_clase->fetch(PDO::FETCH_ASSOC)) {
+
+                                        $id_clase = $fila_clase['idClase'];
+
+                                        $id_clase = str_pad($id_clase, 3, "0", STR_PAD_LEFT);
+
+                                        echo'
+                                        <tr valign="top">
+                                            <td>' . $id_clase . '</td>
+                                            <td>' . $fila_clase['nombre_clase'] . '</td>
+                                            <td style="text-align:center;">
+                                                <a href="#" style="color: #5DADE2">
+                                                    <i class="material-icons">edit</i>
+                                                </a>
+                                                    <i>&nbsp;</i>
+                                                <a href="#" style="color: #E74C3C">
+                                                    <i class="material-icons">delete</i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                            ';
+                                    }
+                                    ?>                                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--***********TAB ORDEN************-->
+        <div class="col-md-9">
+            <div id="Orden" class="tabcontentC">
+                <div class="card">
+                    <div class="header bg-cyan">
+                        <h2>ORDEN</h2>
+                        <ul class="header-dropdown m-r--5">
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <i class="material-icons">more_vert</i>
+                                </a>
+                                <ul class="dropdown-menu pull-right">
+                                    <li><a href="javascript:void(0);">Agregar nuevo orden</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="body">
+                        <div class="table-responsive">
+                                <!--<table class="table table-bordered table-striped table-hover">-->
+                            <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
+                                <thead>
+                                    <tr style="background: white">
+                                        <th>ID</th>
+                                        <th>Orden</th>
+                                        <th>Opciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php
+                                    $sql_orden = "SELECT `idOrden`, `nombre_orden` FROM `orden`";
+
+                                    $consulta_orden = Conexion::obtener_conexion()->query($sql_orden);
+
+                                    while ($fila_orden = $consulta_orden->fetch(PDO::FETCH_ASSOC)) {
+
+                                        $id_orden = $fila_orden['idOrden'];
+
+                                        $id_orden_nuevo = str_pad($id_orden, 3, "0", STR_PAD_LEFT);
+
+                                        echo'
+                                        <tr valign="top">
+                                            <td>' . $id_orden_nuevo . '</td>
+                                            <td>' . $fila_orden['nombre_orden'] . '</td>
+                                            <td style="text-align:center;">
+                                                <a href="#" style="color: #5DADE2">
+                                                    <i class="material-icons">edit</i>
+                                                </a>
+                                                    <i>&nbsp;</i>
+                                                <a href="#" style="color: #E74C3C">
+                                                    <i class="material-icons">delete</i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                            ';
+                                    }
+                                    ?>                                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -74,7 +338,6 @@
                                 </tbody>
                             </table>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -603,6 +866,34 @@
     </div>
 </div>
 
+<!-- Modal REINO -->
+<div class="modal fade" id="modalReino" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document" style="width: 600px; margin: 30px auto">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="defaultModalLabel">Agregar nuevo Reino</h4>
+            </div>
+            <form method="post" action="">
+                <div class="modal-body">
+                    <label for="firstName">Nombre del Reino</label>
+                    <input type="text" class="form-control" id="nombre_reino" placeholder="" value="" required="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-link waves-effect" data-dismiss="modal" id="guardar-reino">AGREGAR</button>
+                    <button type="button" class="btn btn-link waves-effect" data-dismiss="modal" aria-label="Close">CANCELAR</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<?php
+//include_once './plantillas/modal-catalogos.inc.php';
+?>
+
 <script>
     function openCity(evt, cityName) {
         var i, tabcontent, tablinks;
@@ -621,3 +912,4 @@
     // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();
 </script>
+

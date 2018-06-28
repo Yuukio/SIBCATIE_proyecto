@@ -905,18 +905,6 @@ espacio-derecho{
 
 }
 
-.std-form input, .std-form select, .std-form textarea {
-    box-sizing: border-box;
-    height: 3.4em;
-    padding: .8em 1em;
-    width: 100%;
-    border: .1em solid #a5a2a2;
-    font-size: 1em;
-    line-height: 1.8;
-    background: rgb(100%,100%,100%);
-    transition: padding .1s ease-out,border-color .1s ease-out;
-}
-
 .std-form .radio-label {
     flex: 0 1 auto;
     margin-bottom: .65em;

@@ -9,7 +9,7 @@
 
                     <!---->
 
-                    <h4 class="mb-3" style="padding-bottom: 15px; text-align: center">Cemplete los campos de registro</h4>
+                    <h4 class="mb-3" style="padding-bottom: 15px; text-align: center">Complete los campos de registro</h4>
                     <form class="needs-validation"  novalidate>
                         <div class="row">
                             <div class="col-md-6 mb-3">
